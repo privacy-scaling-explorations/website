@@ -25,13 +25,20 @@ body {
     text-align: center;
 }
 
-.link a {
+.link, .link a{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+a {
     text-decoration: none;
-    color: white;
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .icon {
@@ -39,7 +46,8 @@ body {
     padding-bottom: .5rem;
 }
 
-A[href=""], A[href="#"] {
+a[href=""], a[href="#"], a[href=""]:hover, a[href="#"]:hover {
     opacity: 25%;
     cursor: default;
+    text-decoration: none;
   }
