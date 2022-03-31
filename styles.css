@@ -2,10 +2,13 @@ body {
     color: white;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(93,93,93,1) 100%);
+    background-attachment: fixed;
     height: 100vh;
     font-family: 'Inter', sans-serif;
 }
-
+.row {
+    padding-bottom: 1.5rem;
+}
 .title {
     margin: 7rem auto 1rem;
     text-align: center;
@@ -35,3 +38,8 @@ body {
     height: 2.75rem;
     padding-bottom: .5rem;
 }
+
+A[href=""], A[href="#"] {
+    opacity: 25%;
+    cursor: default;
+  }
