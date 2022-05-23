@@ -1,0 +1,19 @@
+.App {
+  margin-bottom: 2.5rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}

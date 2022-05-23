@@ -1,0 +1,39 @@
+.card {
+  border-radius: .35rem;
+}
+
+.card-footer {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1.0rem;
+  background-color: transparent;
+}
+
+.link {
+  padding: 0.125rem;
+  margin: 0 auto;
+}
+
+.link a {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 1.5rem;
+  padding-block: 0.125rem;
+  padding-inline-end: 0.33rem;
+}
+
+.link-title {
+  text-transform: capitalize;
+}
+
+a[href=''],
+a[href='#'],
+a[href='']:hover,
+a[href='#']:hover {
+  opacity: 25%;
+  cursor: default;
+  text-decoration: none;
+}

@@ -2,73 +2,166 @@
   {
     "name": "Zkopru",
     "description": "Zkopru is an optimistic rollup that uses zero knowledge proofs to enable private, low-cost transactions with ETH, ERC-20s and NFTs on layer 2.",
-    "website": "https://zkopru.network/",
-    "github": "https://github.com/zkopru-network"
+    "links": [
+      {
+        "website": "https://zkopru.network/"
+      },
+      {
+        "github": "https://github.com/zkopru-network"
+      },
+      {
+        "discord": "https://discord.gg/R8QKzad8u4"
+      }
+    ]
   },
   {
     "name": "BLS Wallet",
     "description": "Reduce L2 gas costs using BLS signatures, transaction aggregation, and smart contract wallets.",
-    "website": "https://blswallet.org/",
-    "github": "https://github.com/jzaki/bls-wallet"
+    "links": [
+      {
+        "website": "https://blswallet.org/"
+      },
+      {
+        "github": "https://github.com/jzaki/bls-wallet"
+      }
+    ]
   },
   {
     "name": "zkEVM",
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
-    "website": "https://hackmd.io/@yezhang/S1_KMMbGt",
-    "github": "https://github.com/appliedzkp/zkevm-specs"
+    "links": [
+      {
+        "website": "https://hackmd.io/@yezhang/S1_KMMbGt"
+      },
+      {
+        "github": "https://github.com/appliedzkp/zkevm-specs"
+      }
+    ]
   },
   {
     "name": "MACI (Minimal Anti-Collusion Infrastructure)",
     "description": "MACI uses zero knowledge proofs for collusion resistance in blockchain voting (such as quadratic funding mechanisms) by making it impossible for anyone other than the vote coordinator to verify how a specific user voted. MACI also ensures correct execution of the votes, allowing anyone to verify the results.",
-    "website": "",
-    "github": "https://github.com/appliedzkp/maci"
+    "links": [
+      {
+        "website": ""
+      },
+      {
+        "github": "https://github.com/appliedzkp/maci"
+      }
+    ]
   },
   {
     "name": "Unirep Social",
     "description": "Use Unirep to make a private social network like reddit.",
-    "website": "https://unirep.social/",
-    "github": "https://github.com/unirep/unirep-social"
+    "links": [
+      {
+        "website": "https://unirep.social/"
+      },
+      {
+        "github": "https://github.com/unirep/unirep-social"
+      },
+      {
+        "discord": "https://discord.gg/qrqq8SeN7F"
+      }
+    ]
   },
   {
     "name": "Semaphore",
     "description": "Semaphore is a zero-knowledge gadget, designed to be a simple and generic privacy layer for Ethereum DApps. Ethereum users can prove membership of a set without revealing their original identity, as well as signal their endorsement of an arbitrary string.",
-    "website": "https://semaphore.appliedzkp.org/",
-    "github": "https://github.com/appliedzkp/semaphore/"
+    "links": [
+      {
+        "website": "https://semaphore.appliedzkp.org/"
+      },
+      {
+        "github": "https://github.com/appliedzkp/semaphore/"
+      }
+    ]
   },
   {
     "name": "Interep",
     "description": "Private reputation and identity system allowing services to verify that users belong to a certain group or meet certain reputation criteria without revealing their identities. Users can anonymously export reputation from platforms such as Twitter and Github.",
-    "website": "https://interep.link/",
-    "github": "https://github.com/interep-project"
+    "links": [
+      {
+        "website": "https://interep.link/"
+      },
+      {
+        "github": "https://github.com/interep-project"
+      },
+      {
+        "discord": "https://discord.gg/jMfye2mWcf"
+      }
+    ]
   },
   {
     "name": "Clr.fund for Everyone",
     "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
-    "website": "https://clrfund-xdai.on.fleek.co/#/",
-    "github": "https://clrfund.gitbook.io/deployer/"
+    "links": [
+      {
+        "website": "https://clrfund-xdai.on.fleek.co/#/"
+      },
+      {
+        "github": "https://clrfund.gitbook.io/deployer/"
+      }
+    ]
   },
   {
     "name": "RLN",
     "description": "RLN (Rate limiting nullfier) is a construct based on zero-knowledge proofs that enables spam prevention mechanism for decentralized, anonymous environments. In anonymous environments, the identity of the entities is unknown.",
-    "website": "https://ethresear.ch/t/semaphore-rln-rate-limiting-nullifier-for-spam-prevention-in-anonymous-p2p-setting/5009",
-    "github": "https://github.com/bdim1/rlnapp"
+    "links": [
+      {
+        "website": "https://ethresear.ch/t/semaphore-rln-rate-limiting-nullifier-for-spam-prevention-in-anonymous-p2p-setting/5009"
+      },
+      {
+        "github": "https://github.com/bdim1/rlnapp"
+      }
+    ]
   },
   {
     "name": "zk-chat",
     "description": "Anonymous and private chat environments, using Interep for a privacy preserving registry and sybil resistance and RLN for spam protection.",
-    "website": "zkchat.org",
-    "github": "github.com/njofce/zk-chat"
+    "links": [
+      {
+        "website": "zkchat.org"
+      },
+      {
+        "github": "github.com/njofce/zk-chat"
+      }
+    ]
   },
   {
     "name": "COCO",
     "description": "Collaborative content curation using a double-or-nothing challenge mechanism.",
-    "website": "https://www.cocoverse.club/",
-    "github": "https://github.com/Janmajayamall/meme-curator"
+    "links": [
+      {
+        "website": "https://www.cocoverse.club/"
+      },
+      {
+        "github": "https://github.com/Janmajayamall/meme-curator"
+      }
+    ]
   },
   {
     "name": "Trusted Setup",
-    "description": "Open source infrastructure for running a trusted setup ceremony, in which many people participate in generating entropy which will secure a cryptographic protocol.<br/>Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. (github.com/weijiekoh/perpetualpowersoftau)<br/>MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase. (github.com/glamperd/setup-mpc-ui)",
-    "website": "",
-    "github": ""
+    "description": "Open source infrastructure for running a trusted setup ceremony, in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase.",
+    "links": [
+      {
+        "github": "github.com/weijiekoh/perpetualpowersoftau"
+      },
+      {
+        "github": "github.com/glamperd/setup-mpc-ui"
+      }
+    ]
+  },
+  {
+    "name": "TLS Notary",
+    "description": "Black Magic",
+    "links": [
+      {
+        "github": "https://github.com/tlsnotary/tlsn"
+      },
+      {
+        "discord": "https://discord.gg/EjpvcEaqkh"
+      }
+    ]
   }
 ]
