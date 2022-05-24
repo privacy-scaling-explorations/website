@@ -3,6 +3,15 @@ import ProjectCard, { ProjectProps } from './ProjectCard';
 import ProjectData from './Projects.json';
 import './Projects.css';
 
+function shuffleFisherYates(array: []): [] {
+  let i = array.length;
+  while (i--) {
+    const ri = Math.floor(Math.random() * i);
+    [array[i], array[ri]] = [array[ri], array[i]];
+  }
+  return array;
+}
+
 function Projects() {
   let [projects, setProjects] = useState<ProjectProps[]>([]);
 
@@ -13,6 +22,8 @@ function Projects() {
   let _projects = projects.map((project) => {
     return (<ProjectCard key={project.name} {...project} />);
   })
+
+  _projects = shuffleFisherYates(_projects as []);
 
   return (
     <div className="Projects">
