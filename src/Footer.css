@@ -1,0 +1,9 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1.0rem;
+  background-color: transparent;
+  border-top: 3px solid var(--gray);
+  margin: 3em 0;
+  padding: 1.5em 1em;
+}
