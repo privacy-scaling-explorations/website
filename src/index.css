@@ -1,6 +1,5 @@
 :root {
-  --light-purple: #CFC4FB;
-  --light-purple2: rgb(195, 181, 250);
+  --light-purple: rgb(195, 181, 250);
   --green: #A6E275;
   --aqua: #53D3E0;
   --light-aqua: #CBF2F6;
@@ -8,10 +7,12 @@
   --light-pink: #FFE1DE;
   --gold: #FFE94D;
   --gray: #282A2D;
+  --gray-transparent: rgba(40, 42, 45, 0.5);
+  --box-shadow: -22px 10px 0px var(--gray);
 }
 
 .bg-light-purple {
-  background-color: var(--light-purple2);
+  background-color: var(--light-purple);
 }
 
 .bg-light-pink {
@@ -22,18 +23,37 @@
   background-color: var(--light-aqua)
 }
 
+.btn-pink {
+  background-color: var(--pink);
+  color: black;
+  font-weight: 500;
+  margin: 0.25rem;
+  border: 2px solid var(--gray);
+}
+
+.btn-shadow {
+  box-shadow: -5px 3px 0px var(--gray);
+}
+
 body {
   color: black;
-  background: rgb(195, 181, 250);
+  background: var(--light-purple);
   background-attachment: fixed;
   height: 100vh;
   font-family: 'Inter', sans-serif;
-  background-image: url('./images/pse-deco.png');
+  /* background-image: url('./images/pse-deco.png'); */
   background-repeat: no-repeat;
   background-position: right -20em bottom 5em;
 }
 
 @media screen and (max-width: 800px) {
+  :root {
+    --box-shadow: -12px 5px 0px var(--gray);
+  }
+  body {
+    margin-inline: 1rem;
+  }
+
   .starter {
     padding-block: 1rem;
     gap: 1rem;

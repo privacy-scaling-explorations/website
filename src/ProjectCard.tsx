@@ -8,7 +8,8 @@ import './ProjectCard.css'
 export interface ProjectProps {
   name: string;
   description: string;
-  links: Links[];
+  image?: string;
+  links?: Links[];
 }
 
 interface Links {
@@ -21,8 +22,8 @@ interface Links {
 
 function renderLink(url: string, source: string, icon: string): any {
   return (
-    <div className="link" key={url}>
-      <a href={url}>
+    <div className="link" key={url} >
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <img className="icon" src={icon} alt={source} />
         <div className="link-title">{source}</div>
       </a>
@@ -31,7 +32,7 @@ function renderLink(url: string, source: string, icon: string): any {
 }
 
 function ProjectCard(props: ProjectProps) {
-  let links = props.links.map((link) => {
+  let links = props.links ? props.links.map((link) => {
     if (link.github) {
       return renderLink(link.github, 'github', github);
     } else if (link.website) {
@@ -45,10 +46,24 @@ function ProjectCard(props: ProjectProps) {
     } else {
       return null;
     }
-  });
+  }) : null;
+
+  let img = (() => {
+    try {
+      if (props.image) {
+        return (<img className="card-img-top" src={require(`./images/${props.image}`)} alt={props.name} />);
+      }
+      else {
+        return null;
+      }
+    } catch (e) {
+      return null;
+    }
+  })();
 
   return (
     <div className="card border border-5 border-dark p-3">
+      {img}
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
         <p className="card-text">{props.description}</p>

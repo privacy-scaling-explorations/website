@@ -1,6 +1,6 @@
 .card {
   border-radius: .35rem;
-  box-shadow: -22px 10px 0px var(--gray);
+  box-shadow: var(--box-shadow);
   border-color: var(--gray);
 }
 

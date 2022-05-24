@@ -1,6 +1,7 @@
 import EthLogo from './EthLogo';
 import Starter from './Starter';
 import Projects from './Projects';
+import Footer from './Footer';
 import './App.css';
 
 
@@ -12,6 +13,7 @@ function App() {
       <EthLogo />
       <Starter />
       <Projects />
+      <Footer />
     </div>
   );
 }

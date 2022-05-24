@@ -4,3 +4,9 @@
   bottom: 1rem;
   left: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  .eth-diamond-logo {
+    display: none
+  }
+}

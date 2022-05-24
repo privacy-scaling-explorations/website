@@ -80,6 +80,7 @@
   {
     "name": "Interep",
     "description": "Private reputation and identity system allowing services to verify that users belong to a certain group or meet certain reputation criteria without revealing their identities. Users can anonymously export reputation from platforms such as Twitter and Github.",
+    "image":"interep.png",
     "links": [
       {
         "website": "https://interep.link/"
@@ -131,6 +132,7 @@
   {
     "name": "COCO",
     "description": "Collaborative content curation using a double-or-nothing challenge mechanism.",
+    "image": "coco.png",
     "links": [
       {
         "website": "https://www.cocoverse.club/"
@@ -155,6 +157,7 @@
   {
     "name": "TLS Notary",
     "description": "Black Magic",
+    "image": "tlsn.png",
     "links": [
       {
         "github": "https://github.com/tlsnotary/tlsn"
