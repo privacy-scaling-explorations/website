@@ -11,17 +11,16 @@ function Starter() {
       <img src={logo} alt="eth pse logo" className="pselogo" />
 
       <div className="intro h-100 p-3 bg-light-purple border border-5 border-dark">
-        <h1 className="pt-3 pb-5">
-          Welcome to
-          <br />
-          Privacy & Scaling Explorations
+        <h1 className="pt-3 pb-4">
+          Welcome to Privacy & Scaling Explorations
         </h1>
         <p>
           A multidisciplinary team supported by the Ethereum Foundation. PSE explores new use cases
           for zero knowledge proofs and other cryptographic primitives through research and
           proof-of-concept implementation.
         </p>
-        <p>We facilitate the integration of ZK primitives into decentralized applications.</p>
+        <p className="pb-2">We facilitate the integration of ZK primitives into decentralized applications.</p>
+        <button className="btn btn-pink btn-shadow mb-3">We are hiring!</button>
       </div>
       <div className="center">
         <div className="link">
@@ -39,7 +38,7 @@ function Starter() {
       </div>
       <div className="col-md-12 arrow">
         <img src={arrow} alt="" />
-        <div className="fst-italic" style={{ opacity: '75%', paddingTop: '1rem' }}>
+        <div className="fst-italic more-info" style={{ opacity: '75%', paddingTop: '1rem' }}>
           more info below
         </div>
       </div>
