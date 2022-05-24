@@ -24,13 +24,13 @@ function Starter() {
       </div>
       <div className="center">
         <div className="link">
-          <a href="https://twitter.com/PrivacyScaling">
+          <a href="https://twitter.com/PrivacyScaling" className="btn btn-aqua btn-shadow">
             <img src={twitter} alt="" className="icon" />
             <div>Twitter</div>
           </a>
         </div>
         <div className="link">
-          <a href="https://discord.gg/g5YTV7HHbh">
+          <a href="https://discord.gg/g5YTV7HHbh"  className="btn btn-green btn-shadow">
             <img src={discord} alt="" className="icon" />
             <div>Discord</div>
           </a>
