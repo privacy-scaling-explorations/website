@@ -40,6 +40,7 @@
   },
   {
     "name": "MACI (Minimal Anti-Collusion Infrastructure)",
+    "short_name": "MACI",
     "description": "MACI uses zero knowledge proofs for collusion resistance in blockchain voting (such as quadratic funding mechanisms) by making it impossible for anyone other than the vote coordinator to verify how a specific user voted. MACI also ensures correct execution of the votes, allowing anyone to verify the results.",
     "links": [
       {
@@ -95,6 +96,7 @@
   },
   {
     "name": "Clr.fund for Everyone",
+    "short_name": "Clr.fund",
     "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
     "links": [
       {
