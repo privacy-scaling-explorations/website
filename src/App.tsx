@@ -1,10 +1,8 @@
-import EthLogo from './EthLogo';
-import Starter from './Starter';
-import Projects from './Projects';
-import Footer from './Footer';
+import EthLogo from './components/EthLogo';
+import Starter from './components/Starter';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 import './App.css';
-
-
 
 function App() {
 
