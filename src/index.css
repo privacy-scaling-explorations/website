@@ -1,10 +1,36 @@
+:root {
+  --light-purple: #CFC4FB;
+  --light-purple2: rgb(195, 181, 250);
+  --green: #A6E275;
+  --aqua: #53D3E0;
+  --light-aqua: #CBF2F6;
+  --pink: #FF9C92;
+  --light-pink: #FFE1DE;
+  --gold: #FFE94D;
+  --gray: #282A2D;
+}
+
+.bg-light-purple {
+  background-color: var(--light-purple2);
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink)
+}
+
+.bg-light-aqua {
+  background-color: var(--light-aqua)
+}
+
 body {
   color: black;
   background: rgb(195, 181, 250);
-  background: linear-gradient(180deg, rgba(219, 211, 252, 1) 0%, rgba(219, 211, 252, 1) 100%);
   background-attachment: fixed;
   height: 100vh;
   font-family: 'Inter', sans-serif;
+  background-image: url('./images/pse-deco.png');
+  background-repeat: no-repeat;
+  background-position: right -20em bottom 5em;
 }
 
 @media screen and (max-width: 800px) {

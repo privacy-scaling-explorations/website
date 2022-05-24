@@ -38,3 +38,10 @@
   height: auto;
   width: 48px;
 }
+
+.intro {
+  max-width: 45rem;
+  border-radius: .35rem;
+  border-color: var(--gray);
+  box-shadow: -22px 10px 0px var(--gray);
+}

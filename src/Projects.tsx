@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Project, { ProjectProps } from './Project';
+import ProjectCard, { ProjectProps } from './ProjectCard';
 import ProjectData from './Projects.json';
 import './Projects.css';
 
@@ -11,7 +11,7 @@ function Projects() {
   }, []);
 
   let _projects = projects.map((project) => {
-    return (<Project key={project.name} {...project} />);
+    return (<ProjectCard key={project.name} {...project} />);
   })
 
   return (
