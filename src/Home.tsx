@@ -2,12 +2,12 @@ import EthLogo from './components/EthLogo';
 import Starter from './components/Starter';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import './App.css';
+import './Home.css';
 
-function App() {
+function Home() {
 
   return (
-    <div className="App container-sm">
+    <div className="Home container-sm">
       <EthLogo />
       <Starter />
       <Projects />
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
