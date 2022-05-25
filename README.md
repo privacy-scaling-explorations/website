@@ -3,6 +3,13 @@ Main branch served at: https://projects.appliedzkp.org/
 
 This is the React re-write of the PSE website, formally just a landing page.
 
+## Get Started with Development
+
+`npm install`
+`npm run start` serves a development server at [http://localhost:8081](http://localhost:8081)
+
+The components live under `/src/components`.
+
 ## How to contribute
 
 ### Add / Change a Project Entry
