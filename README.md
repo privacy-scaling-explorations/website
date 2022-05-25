@@ -15,7 +15,7 @@ The components live under `/src/components`.
 
 ### Add / Change a Project Entry
 
-All the projects are stored in the `projects.json` file in `/src/components/`
+All the projects are stored in the `projects.json` file in `/src/data/`
 
 Here is an example of a project's entry:
 

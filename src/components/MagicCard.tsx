@@ -6,13 +6,14 @@ import telegram from '../images/telegram.svg';
 import './MagicCard.css';
 import ColorHash from 'color-hash'
 
-export interface CardProps {
+export interface MagicCardProps {
   name: string;
   short_name?: string;
   description: string | string[];
   long_description?: string | string[];
   image?: string;
   links?: Links[];
+  renderBanner?: boolean;
 }
 
 interface Links {
@@ -34,13 +35,13 @@ function renderLink(url: string, source: string, icon: string): any {
   );
 }
 
-function renderImage(name: string): any {
+function renderBanner(name: string): any {
   let hueRange = { min: 45, max: 360 }
   let colorHashText = new ColorHash({hue: hueRange, lightness: [0.8, 0.9]}).hex(name);
   let colorHashBG = new ColorHash({hue: hueRange, lightness: [0.35, 0.4], saturation: [0.65, 0.85, 1]}).hex(name);
   return (
     <svg height="150px" width="350px" style={{backgroundColor: colorHashBG}} className="card-img-top">
-      <text text-anchor="middle" x="175px" y="85px" fill={colorHashText} style={{ fontSize: "2.5rem", fontStyle: "italic"}}>{name}</text>
+      <text text-anchor="middle" x="50%" y="50%" fill={colorHashText} style={{ fontSize: "2.5rem", fontStyle: "italic"}}>{name}</text>
     </svg>
   );
 }
@@ -58,7 +59,7 @@ function renderDescription(description: string | string[]): any {
   });
 }
 
-function MagicCard(props: CardProps) {
+function MagicCard(props: MagicCardProps) {
   let links = props.links
     ? props.links.map((link) => {
         if (link.github) {
@@ -83,11 +84,19 @@ function MagicCard(props: CardProps) {
         return (
           <img className="card-img-top" src={require(`../images/${props.image}`)} alt={props.name} />
         );
-      } else {
-        return renderImage(props.short_name || props.name);
+      } else if (props.renderBanner == true || props.renderBanner == undefined) {
+        return renderBanner(props.short_name || props.name);
+      }
+      else {
+        return null;
       }
     } catch (e) {
-      return renderImage(props.short_name || props.name);
+      if (props.renderBanner == true || props.renderBanner == undefined) {
+        return renderBanner(props.short_name || props.name);
+      }
+      else {
+        return null;
+      }
     }
   })();
 
@@ -96,7 +105,7 @@ function MagicCard(props: CardProps) {
       {img}
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
-        <p className="card-text">{props.description}</p>
+        {renderDescription(props.description)}
         <div className="card-footer">{links}</div>
       </div>
     </div>

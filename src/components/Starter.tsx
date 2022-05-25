@@ -38,7 +38,7 @@ function Starter() {
       </div>
       <div className="col-md-12 arrow">
         <img src={arrow} alt="" />
-        <div className="fst-italic more-info" style={{ opacity: '75%', paddingTop: '1rem' }}>
+        <div className="fst-italic more-info" style={{ opacity: '85%', paddingTop: '1rem' }}>
           more info below
         </div>
       </div>

@@ -1,6 +1,7 @@
 import EthLogo from './components/EthLogo';
 import Starter from './components/Starter';
 import Projects from './components/Projects';
+import Team from './components/Team';
 import Footer from './components/Footer';
 import './Home.css';
 
