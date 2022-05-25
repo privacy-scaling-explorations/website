@@ -1,8 +1,8 @@
-import globe from './images/globe.svg';
-import github from './images/github.svg';
-import discord from './images/discord.svg';
-import twitter from './images/twitter.svg';
-import telegram from './images/telegram.svg';
+import globe from '../images/globe.svg';
+import github from '../images/github.svg';
+import discord from '../images/discord.svg';
+import twitter from '../images/twitter.svg';
+import telegram from '../images/telegram.svg';
 import './ProjectCard.css';
 import ColorHash from 'color-hash'
 
@@ -67,7 +67,7 @@ function ProjectCard(props: ProjectProps) {
     try {
       if (props.image) {
         return (
-          <img className="card-img-top" src={require(`./images/${props.image}`)} alt={props.name} />
+          <img className="card-img-top" src={require(`../images/${props.image}`)} alt={props.name} />
         );
       } else {
         return renderImage(props.short_name || props.name);

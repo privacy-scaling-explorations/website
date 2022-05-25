@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './images/pse-logo.svg';
-import arrow from './images/arrow.svg';
-import discord from './images/discord.svg';
-import twitter from './images/twitter.svg';
+import logo from '../images/pse-logo.svg';
+import arrow from '../images/arrow.svg';
+import discord from '../images/discord.svg';
+import twitter from '../images/twitter.svg';
 import './Starter.css';
 
 function Starter() {

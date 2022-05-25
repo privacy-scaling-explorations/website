@@ -1,5 +1,5 @@
 
-import eth from './images/eth-diamond-color.png';
+import eth from '../images/eth-diamond-color.png';
 import './EthLogo.css';
 
 
