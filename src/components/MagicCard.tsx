@@ -3,14 +3,14 @@ import github from '../images/github.svg';
 import discord from '../images/discord.svg';
 import twitter from '../images/twitter.svg';
 import telegram from '../images/telegram.svg';
-import './ProjectCard.css';
+import './MagicCard.css';
 import ColorHash from 'color-hash'
 
-export interface ProjectProps {
+export interface CardProps {
   name: string;
   short_name?: string;
-  description: string;
-  long_description?: string;
+  description: string | string[];
+  long_description?: string | string[];
   image?: string;
   links?: Links[];
 }
@@ -45,7 +45,20 @@ function renderImage(name: string): any {
   );
 }
 
-function ProjectCard(props: ProjectProps) {
+function renderDescription(description: string | string[]): any {
+  if (typeof description === 'string') {
+    return (
+      <p className="card-text">{description}</p>
+    );
+  }
+  return description.map((text: string, index: number) => {
+    return (
+      <p className="card-text" key={index}>{text}</p>
+    );
+  });
+}
+
+function MagicCard(props: CardProps) {
   let links = props.links
     ? props.links.map((link) => {
         if (link.github) {
@@ -90,4 +103,4 @@ function ProjectCard(props: ProjectProps) {
   );
 }
 
-export default ProjectCard;
+export default MagicCard;

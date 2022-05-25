@@ -1,26 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import ProjectCard, { ProjectProps } from './ProjectCard';
+import MagicCard, { CardProps } from './MagicCard';
+import { shuffleFisherYates } from '../Utils';
 import ProjectData from './Projects.json';
 import './Projects.css';
 
-function shuffleFisherYates(array: []): [] {
-  let i = array.length;
-  while (i--) {
-    const ri = Math.floor(Math.random() * i);
-    [array[i], array[ri]] = [array[ri], array[i]];
-  }
-  return array;
-}
 
 function Projects() {
-  let [projects, setProjects] = useState<ProjectProps[]>([]);
+  let [projects, setProjects] = useState<CardProps[]>([]);
 
   useEffect(() => {
     setProjects(ProjectData);
   }, []);
 
   let _projects = projects.map((project) => {
-    return (<ProjectCard key={project.name} {...project} />);
+    return (<MagicCard key={project.name} {...project} />);
   })
 
   _projects = shuffleFisherYates(_projects as []);
