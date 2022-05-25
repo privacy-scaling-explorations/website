@@ -10,6 +10,7 @@ export interface ProjectProps {
   name: string;
   short_name?: string;
   description: string;
+  long_description?: string;
   image?: string;
   links?: Links[];
 }
