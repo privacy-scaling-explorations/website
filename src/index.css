@@ -10,10 +10,32 @@
   --gray: #282A2D;
   --gray-transparent: rgba(40, 42, 45, 0.5);
   --box-shadow: -22px 10px 0px var(--gray);
+
+  --twitter: #1DA1F2;
+  --telegram: #0088cc;
+  --youtube: #FF0000;
+  --github-dark: #171515;
+  --github: #e8eaea;
+  --discord: #7289DA;
+  --website: var(--green);
+}
+
+body {
+  color: var(--gray);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: var(--purple);
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  /* background-image: url('./images/pse-deco.png'); */
+  background-repeat: no-repeat;
+  background-position: right -20em bottom 5em;
 }
 
 .bg-light-purple {
-  background-color: var(--light-purple);
+  background-color: var(--light-purple)
 }
 
 .bg-light-pink {
@@ -24,11 +46,20 @@
   background-color: var(--light-aqua)
 }
 
+/*
+  Button Theming
+*/
+
 .btn {
   color: var(--gray);
   font-weight: 500;
   margin: 0.25rem;
   border: 2px solid var(--gray);
+}
+
+.btn:hover {
+  text-decoration: none;
+  border-color: var(--gray-transparent);
 }
 
 .btn-pink {
@@ -51,19 +82,19 @@
   box-shadow: -5px 3px 0px var(--gray);
 }
 
-body {
-  color: var(--gray);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  background: var(--purple);
-  background-attachment: fixed;
-  height: 100vh;
-  font-family: 'Inter', sans-serif;
-  /* background-image: url('./images/pse-deco.png'); */
-  background-repeat: no-repeat;
-  background-position: right -20em bottom 5em;
+/*
+  Link Theming
+*/
+
+a {
+  text-decoration: none;
+  color: var(--gray) !important;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 @media screen and (max-width: 800px) {
   :root {

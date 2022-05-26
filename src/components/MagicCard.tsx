@@ -4,7 +4,7 @@ import discord from '../images/discord.svg';
 import twitter from '../images/twitter.svg';
 import telegram from '../images/telegram.svg';
 import './MagicCard.css';
-import ColorHash from 'color-hash'
+import ColorHash from 'color-hash';
 
 export interface MagicCardProps {
   name: string;
@@ -24,37 +24,65 @@ interface Links {
   telegram?: string;
 }
 
-function renderLink(url: string, source: string, icon: string): any {
-  return (
-    <div className="link" key={url}>
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        <img className="icon" src={icon} alt={source} />
-        <div className="link-title">{source}</div>
-      </a>
-    </div>
-  );
+function renderLink(url: string, source: string, icon: string, button: boolean = true): any {
+  if (!button) {
+    return (
+      <div className="link" key={url}>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <img className="icon" src={icon} alt={source} />
+          <div className="link-title">{source}</div>
+        </a>
+      </div>
+    );
+  } else {
+    return (
+      <div className="link" key={url}>
+        <a href={url} target="_blank" rel="noopener noreferrer" className="btn" style={{backgroundColor: `var(--${source})`}}>
+          <img className="icon" src={icon} alt={source} />
+          <div className="link-title">{source}</div>
+        </a>
+      </div>
+    );
+  }
 }
 
 function renderBanner(name: string): any {
-  let hueRange = { min: 45, max: 360 }
-  let colorHashText = new ColorHash({hue: hueRange, lightness: [0.8, 0.9]}).hex(name);
-  let colorHashBG = new ColorHash({hue: hueRange, lightness: [0.35, 0.4], saturation: [0.65, 0.85, 1]}).hex(name);
+  let hueRange = { min: 45, max: 360 };
+  let colorHashText = new ColorHash({ hue: hueRange, lightness: [0.8, 0.9] }).hex(name);
+  let colorHashBG = new ColorHash({
+    hue: hueRange,
+    lightness: [0.35, 0.4],
+    saturation: [0.65, 0.85, 1]
+  }).hex(name);
   return (
-    <svg height="150px" width="350px" style={{backgroundColor: colorHashBG}} className="card-img-top">
-      <text text-anchor="middle" x="50%" y="50%" fill={colorHashText} style={{ fontSize: "2.5rem", fontStyle: "italic"}}>{name}</text>
+    <svg
+      height="150px"
+      width="350px"
+      style={{ backgroundColor: colorHashBG }}
+      className="card-img-top"
+    >
+      <text
+        textAnchor="middle"
+        x="50%"
+        y="58%"
+        fill={colorHashText}
+        style={{ fontSize: '2.5rem', fontStyle: 'italic' }}
+      >
+        {name}
+      </text>
     </svg>
   );
 }
 
 function renderDescription(description: string | string[]): any {
   if (typeof description === 'string') {
-    return (
-      <p className="card-text">{description}</p>
-    );
+    return <p className="card-text">{description}</p>;
   }
   return description.map((text: string, index: number) => {
     return (
-      <p className="card-text" key={index}>{text}</p>
+      <p className="card-text" key={index}>
+        {text}
+      </p>
     );
   });
 }
@@ -82,19 +110,21 @@ function MagicCard(props: MagicCardProps) {
     try {
       if (props.image) {
         return (
-          <img className="card-img-top" src={require(`../images/${props.image}`)} alt={props.name} />
+          <img
+            className="card-img-top"
+            src={require(`../images/${props.image}`)}
+            alt={props.name}
+          />
         );
       } else if (props.renderBanner == true || props.renderBanner == undefined) {
         return renderBanner(props.short_name || props.name);
-      }
-      else {
+      } else {
         return null;
       }
     } catch (e) {
       if (props.renderBanner == true || props.renderBanner == undefined) {
         return renderBanner(props.short_name || props.name);
-      }
-      else {
+      } else {
         return null;
       }
     }
@@ -106,8 +136,8 @@ function MagicCard(props: MagicCardProps) {
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
         {renderDescription(props.description)}
-        <div className="card-footer">{links}</div>
       </div>
+      <div className="card-footer">{links}</div>
     </div>
   );
 }

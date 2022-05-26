@@ -9,11 +9,3 @@
   gap: 5rem;
 }
 
-a {
-  text-decoration: none;
-  color: black !important;
-}
-
-a:hover {
-  text-decoration: underline;
-}

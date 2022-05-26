@@ -1,15 +1,30 @@
 .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   border-radius: .35rem;
   box-shadow: var(--box-shadow);
-  border-color: var(--gray);
+}
+
+.card-img-top {
+  border-radius: .2rem;
+}
+
+.card-body {
+  align-self: flex-start;
 }
 
 .card-footer {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  gap: 1.0rem;
+  display: flex;
+  flex-wrap: wrap;
   background-color: transparent;
-  border-top: 3px solid var(--gray);
+  padding: 1em 0em;
+  border-top: 2px solid var(--gray);
+  align-self: stretch;
+}
+
+.card-footer .btn {
+  padding: .25rem .5rem;
 }
 
 .link {
@@ -23,9 +38,9 @@
 }
 
 .icon {
-  height: 1.5rem;
+  height: 1.35rem;
   padding-block: 0.125rem;
-  padding-inline-end: 0.5rem;
+  padding-inline-end: 0.35rem;
 }
 
 .link-title {

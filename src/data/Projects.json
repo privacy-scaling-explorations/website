@@ -1,5 +1,27 @@
 [
   {
+    "name": "Test",
+    "short_name": "TEST",
+    "description": "Black Magic",
+    "links": [
+      {
+        "website": "https://discord.gg"
+      },
+      {
+        "twitter": "https://discord.gg/1"
+      },
+      {
+        "telegram": "https://discord.gg/2"
+      },
+      {
+        "discord": "https://discord.gg/3"
+      },
+      {
+        "github": "https://discord.gg/4"
+      }
+    ]
+  },
+  {
     "name": "Zkopru",
     "description": "Zkopru is an optimistic rollup that uses zero knowledge proofs to enable private, low-cost transactions with ETH, ERC-20s and NFTs on layer 2.",
     "links": [
@@ -81,7 +103,7 @@
   {
     "name": "Interep",
     "description": "Private reputation and identity system allowing services to verify that users belong to a certain group or meet certain reputation criteria without revealing their identities. Users can anonymously export reputation from platforms such as Twitter and Github.",
-    "image":"interep.png",
+    "image": "interep.png",
     "links": [
       {
         "website": "https://interep.link/"

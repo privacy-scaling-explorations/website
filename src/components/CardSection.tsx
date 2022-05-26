@@ -32,7 +32,7 @@ function CardSection(props: ICardSection) {
 
   return (
     <div className="CardSection">
-      <h1 className="CardSectionTitle mt-5 mb-4">{props.title}</h1>
+      <h1 className="CardSectionTitle mb-4">{props.title}</h1>
       <div className="Cards">{cards}</div>
     </div>
   );
