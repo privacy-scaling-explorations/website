@@ -10,29 +10,5 @@
         "twitter": "https://twitter.com/atheartengineer"
       }
     ]
-  },
-  {
-    "name": "Person1",
-    "description": "Dev",
-    "links": [
-      {
-        "github": "https://github.com/atheartengineer"
-      },
-      {
-        "twitter": "https://twitter.com/atheartengineer"
-      }
-    ]
-  },
-  {
-    "name": "Person2",
-    "description": "Dev",
-    "links": [
-      {
-        "github": "https://github.com/atheartengineer"
-      },
-      {
-        "twitter": "https://twitter.com/atheartengineer"
-      }
-    ]
   }
 ]
