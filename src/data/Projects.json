@@ -96,14 +96,17 @@
         "website": "https://semaphore.appliedzkp.org/"
       },
       {
-        "github": "https://github.com/appliedzkp/semaphore/"
+        "github": "https://github.com/semaphore-protocol/semaphore/"
+      },
+      {
+        "telegram": "https://t.me/joinchat/B-PQx1U3GtAh--Z4Fwo56A"
       }
     ]
   },
   {
     "name": "Interep",
     "description": "Private reputation and identity system allowing services to verify that users belong to a certain group or meet certain reputation criteria without revealing their identities. Users can anonymously export reputation from platforms such as Twitter and Github.",
-    "image": "interep.png",
+    "image": "interep.svg",
     "links": [
       {
         "website": "https://interep.link/"
