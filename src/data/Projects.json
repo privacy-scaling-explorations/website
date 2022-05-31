@@ -90,7 +90,8 @@
   },
   {
     "name": "Semaphore",
-    "description": "Semaphore is a zero-knowledge gadget, designed to be a simple and generic privacy layer for Ethereum DApps. Ethereum users can prove membership of a set without revealing their original identity, as well as signal their endorsement of an arbitrary string.",
+    "description": "Semaphore is a protocol, designed to be a simple and generic privacy layer for Ethereum DApps. Using zero knowledge, Ethereum users can prove their membership of a group and send signals such as votes or endorsements without revealing their original identity.",
+    "image": "semaphore.svg",
     "links": [
       {
         "website": "https://semaphore.appliedzkp.org/"
