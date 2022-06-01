@@ -183,11 +183,14 @@
     ]
   },
   {
-    "name": "TLS Notary",
+    "name": "TLSNotary",
     "short_name": "TLSN",
-    "description": "Black Magic",
+    "description": "TLSNotary leverages the ubiquitous TLS protocol to allow users to privately export their data from any webserver in a provable way.",
     "image": "tlsn.png",
     "links": [
+      {
+        "website": "https://tlsnotary.org"
+      },
       {
         "github": "https://github.com/tlsnotary/tlsn"
       },
