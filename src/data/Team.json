@@ -1,5 +1,17 @@
 [
   {
+    "name": "sinu",
+    "description": "TLSNotary Project Lead and Software Engineer",
+    "links": [
+      {
+        "github": "https://github.com/sinui0"
+      },
+      {
+        "twitter": "https://twitter.com/sinu_eth"
+      }
+    ]
+  },
+  {
     "name": "AtHeartEngineer",
     "description": "Dev",
     "links": [
