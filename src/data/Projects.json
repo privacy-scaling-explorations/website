@@ -38,13 +38,13 @@
   },
   {
     "name": "BLS Wallet",
-    "description": "Reduce L2 gas costs using BLS signatures, transaction aggregation, and smart contract wallets.",
+    "description": "Reduce transaction costs on evm-L2s using BLS signatures. The smart contract wallet also includes: recovery, multi-action, gas-less transactions, and upgradability.",
     "links": [
       {
         "website": "https://blswallet.org/"
       },
       {
-        "github": "https://github.com/jzaki/bls-wallet"
+        "github": "https://github.com/web3well/bls-wallet"
       }
     ]
   },
