@@ -8,6 +8,8 @@
 
 .card-img-top {
   border-radius: .2rem;
+  object-fit: cover;
+  max-height: 180px;
 }
 
 .card-body {

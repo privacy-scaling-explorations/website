@@ -1,6 +1,6 @@
 import Starter from './components/Starter';
 import Navbar from './components/Navbar';
-import About from './components/About';
+import AboutCard from './components/AboutCard';
 import Footer from './components/Footer';
 import './TeamPage.css';
 
@@ -9,7 +9,7 @@ function AboutPage() {
     <div className="container-sm">
       <Starter />
       <Navbar />
-      <About />
+      <AboutCard />
       <Footer />
     </div>
   );
