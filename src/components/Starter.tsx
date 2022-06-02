@@ -18,17 +18,17 @@ function Starter() {
         <p className="pb-2">
           We facilitate the integration of ZK primitives into decentralized applications.
         </p>
-        <button className="btn btn-pink btn-shadow mb-3">We are hiring!</button>
+        <button className="btn bg-pink box-shadow mb-3">We are hiring!</button>
       </div>
       <div className="center">
         <div className="link">
-          <a href="https://twitter.com/PrivacyScaling" className="btn btn-aqua btn-shadow">
+          <a href="https://twitter.com/PrivacyScaling" className="btn bg-aqua box-shadow">
             <img src={twitter} alt="" className="icon" />
             <div>Twitter</div>
           </a>
         </div>
         <div className="link">
-          <a href="https://discord.gg/g5YTV7HHbh" className="btn btn-green btn-shadow">
+          <a href="https://discord.gg/g5YTV7HHbh" className="btn bg-green box-shadow">
             <img src={discord} alt="" className="icon" />
             <div>Discord</div>
           </a>

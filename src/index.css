@@ -1,22 +1,22 @@
 :root {
   --light-purple: rgb(195, 181, 250);
   --purple: hsl(252, 45%, 65%);
-  --green: #A6E275;
-  --aqua: #53D3E0;
-  --light-aqua: #CBF2F6;
-  --pink: #FF9C92;
-  --light-pink: #FFE1DE;
-  --gold: #FFE94D;
-  --gray: #282A2D;
+  --green: #a6e275;
+  --aqua: #53d3e0;
+  --light-aqua: #cbf2f6;
+  --pink: #ff9c92;
+  --light-pink: #ffe1de;
+  --gold: #ffe94d;
+  --gray: #282a2d;
   --gray-transparent: rgba(40, 42, 45, 0.5);
   --box-shadow: -22px 10px 0px var(--gray);
 
-  --twitter: #1DA1F2;
+  --twitter: #1da1f2;
   --telegram: #0088cc;
-  --youtube: #FF0000;
+  --youtube: #ff0000;
   --github-dark: #171515;
   --github: #e8eaea;
-  --discord: #7289DA;
+  --discord: #7289da;
   --website: var(--green);
 }
 
@@ -28,22 +28,46 @@ body {
   background: var(--purple);
   background-attachment: fixed;
   height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   /* background-image: url('./images/pse-deco.png'); */
   background-repeat: no-repeat;
   background-position: right -20em bottom 5em;
 }
 
+/*
+  Theming Utility classes
+*/
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.bg-purple {
+  background-color: var(--light-purple);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-aqua {
+  background-color: var(--light-aqua);
+}
+
 .bg-light-purple {
-  background-color: var(--light-purple)
+  background-color: var(--light-purple);
 }
 
 .bg-light-pink {
-  background-color: var(--light-pink)
+  background-color: var(--light-pink);
 }
 
 .bg-light-aqua {
-  background-color: var(--light-aqua)
+  background-color: var(--light-aqua);
+}
+
+.box-shadow {
+  box-shadow: -5px 3px 0px var(--gray);
 }
 
 /*
@@ -62,26 +86,6 @@ body {
   border-color: var(--gray-transparent);
 }
 
-.btn-pink {
-  background-color: var(--pink);
-}
-
-.btn-purple {
-  background-color: var(--light-purple);
-}
-
-.btn-green {
-  background-color: var(--green);
-}
-
-.btn-aqua {
-  background-color: var(--light-aqua);
-}
-
-.btn-shadow {
-  box-shadow: -5px 3px 0px var(--gray);
-}
-
 /*
   Link Theming
 */
@@ -95,6 +99,9 @@ a:hover {
   text-decoration: underline;
 }
 
+/*
+  Corrections for responsiveness
+*/
 
 @media screen and (max-width: 800px) {
   :root {
@@ -102,11 +109,6 @@ a:hover {
   }
   body {
     margin-inline: 1rem;
-  }
-
-  .starter {
-    padding-block: 1rem;
-    gap: 1rem;
   }
 
   .icon {
