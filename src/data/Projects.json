@@ -114,6 +114,7 @@
   {
     "name": "Rate Limiting Nullifier",
     "short_name": "RLN",
+    "image": "rln.png",
     "description": "RLN is a construct based on zero-knowledge proofs that enables spam prevention mechanism for decentralized, anonymous environments. In anonymous environments, the identity of the entities is unknown.",
     "links": [
       {
