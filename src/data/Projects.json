@@ -112,8 +112,9 @@
     ]
   },
   {
-    "name": "RLN",
-    "description": "RLN (Rate limiting nullfier) is a construct based on zero-knowledge proofs that enables spam prevention mechanism for decentralized, anonymous environments. In anonymous environments, the identity of the entities is unknown.",
+    "name": "Rate Limiting Nullifier",
+    "short_name": "RLN",
+    "description": "RLN is a construct based on zero-knowledge proofs that enables spam prevention mechanism for decentralized, anonymous environments. In anonymous environments, the identity of the entities is unknown.",
     "links": [
       {
         "website": "https://ethresear.ch/t/semaphore-rln-rate-limiting-nullifier-for-spam-prevention-in-anonymous-p2p-setting/5009"
