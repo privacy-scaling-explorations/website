@@ -4,21 +4,20 @@ import './index.css';
 import HomePage from './HomePage';
 import TeamPage from './TeamPage';
 import AboutPage from './AboutPage';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/team" element={<TeamPage />} />
-      <Route path="/about" element={<AboutPage />} />
+      <Route index element={<HomePage />} />
+      <Route path="projects" element={<HomePage />} />
+      <Route path="team" element={<TeamPage />} />
+      <Route path="about" element={<AboutPage />} />
+      <Route path="*" element={<HomePage />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
