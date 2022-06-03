@@ -25,10 +25,10 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy to gh-pages-react branch
+      - name: Deploy to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branch: gh-pages-react
+          branch: gh-pages
           folder: build
 
       - name: Push to Web3.storage
