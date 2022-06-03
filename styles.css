@@ -1,0 +1,322 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+:root {
+  --light-purple: rgb(195, 181, 250);
+  --purple: hsl(252, 45%, 65%);
+  --green: #a6e275;
+  --aqua: #53d3e0;
+  --light-aqua: #cbf2f6;
+  --pink: #ff9c92;
+  --light-pink: #ffe1de;
+  --gold: #ffe94d;
+  --gray: #282a2d;
+  --gray-transparent: rgba(40, 42, 45, 0.5);
+  --box-shadow: -22px 10px 0px var(--gray);
+
+  --twitter: #1da1f2;
+  --telegram: #0088cc;
+  --youtube: #ff0000;
+  --github-dark: #171515;
+  --github: #e8eaea;
+  --discord: #7289da;
+  --website: var(--green);
+}
+
+body {
+  color: var(--gray);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: var(--purple);
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  /* background-image: url('./images/pse-deco.png'); */
+  background-repeat: no-repeat;
+  background-position: right -20em bottom 5em;
+}
+
+/*
+  Theming Utility classes
+*/
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.bg-purple {
+  background-color: var(--light-purple);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-aqua {
+  background-color: var(--light-aqua);
+}
+
+.bg-light-purple {
+  background-color: var(--light-purple);
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink);
+}
+
+.bg-light-aqua {
+  background-color: var(--light-aqua);
+}
+
+.box-shadow {
+  box-shadow: -5px 3px 0px var(--gray);
+}
+
+/*
+  Button Theming
+*/
+
+.btn {
+  color: var(--gray);
+  font-weight: 500;
+  margin: 0.25rem;
+  border: 2px solid var(--gray);
+}
+
+.btn:hover {
+  text-decoration: none;
+  border-color: var(--gray-transparent);
+}
+
+/*
+  Link Theming
+*/
+
+a {
+  text-decoration: none;
+  color: var(--gray) !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+  Corrections for responsiveness
+*/
+
+@media screen and (max-width: 800px) {
+  :root {
+    --box-shadow: -12px 5px 0px var(--gray);
+  }
+  body {
+    margin-inline: 1rem;
+  }
+
+  .icon {
+    height: 2rem;
+  }
+
+  .row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-block: 2rem;
+    padding-inline: 1rem;
+  }
+
+  .row > .link {
+    width: auto;
+  }
+
+  .center {
+    gap: 2rem;
+  }
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Starter.css ***!
+  \******************************************************************************/
+.starter {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.starter > * {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ending {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  margin: 1rem auto;
+  text-align: center;
+  max-width: 42rem;
+}
+
+.ethlogo {
+  max-height: 16rem;
+}
+
+.arrow {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.arrow img {
+  height: auto;
+  width: 48px;
+}
+
+.intro {
+  max-width: 45rem;
+  border-radius: 0.35rem;
+  border-color: var(--gray);
+  box-shadow: var(--box-shadow);
+}
+
+.intro > p {
+  font-size: 1.1rem;
+}
+
+.more-info {
+  font-weight: 500;
+  color: var(--gray);
+  text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+.border-dark {
+  border-color: var(--gray) !important;
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/MagicCard.css ***!
+  \********************************************************************************/
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: .35rem;
+  box-shadow: var(--box-shadow);
+}
+
+.card-img-top {
+  border-radius: .2rem;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.card-body {
+  align-self: flex-start;
+}
+
+.card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  padding: 1em 0em;
+  border-top: 2px solid var(--gray);
+  align-self: stretch;
+}
+
+.card-footer .btn {
+  padding: .25rem .5rem;
+}
+
+.link {
+  padding: 0.125rem;
+  margin: 0 auto;
+}
+
+.link a {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 1.35rem;
+  padding-block: 0.125rem;
+  padding-inline-end: 0.35rem;
+}
+
+.link-title {
+  text-transform: capitalize;
+}
+
+a[href=''],
+a[href='#'],
+a[href='']:hover,
+a[href='#']:hover {
+  opacity: 25%;
+  cursor: default;
+  text-decoration: none;
+}
+
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/CardSection.css ***!
+  \**********************************************************************************/
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2.5rem;
+}
+
+.CardSectionTitle {
+  text-shadow: -1px 1px 1px rgba(255,255,255,0.66);
+}
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css ***!
+  \*****************************************************************************/
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-buttons > * {
+  font-size: 1.3rem;
+}
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Footer.css ***!
+  \*****************************************************************************/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 3px solid var(--gray);
+  margin: 3em 0;
+  padding: 1.5em 1em;
+}
+
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/HomePage.css ***!
+  \********************************************************************/
+.Home {
+  margin-bottom: 2.5rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/TeamPage.css ***!
+  \********************************************************************/
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/AboutCard.css ***!
+  \********************************************************************************/
+
