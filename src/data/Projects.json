@@ -52,14 +52,15 @@
     ]
   },
   {
-    "name": "Unirep Social",
-    "description": "Use Unirep to make a private social network like reddit.",
+    "name": "Unirep",
+    "description": "Unirep allows anonymous members of a group to give, receive, and prove reputation without revealing their identity. Applications or people can act as attesters and build their own reputation tokens on top of a shared Unirep contract.",
+    "image": "unirep.png",
     "links": [
       {
         "website": "https://unirep.social/"
       },
       {
-        "github": "https://github.com/unirep/unirep-social"
+        "github": "https://github.com/unirep"
       },
       {
         "discord": "https://discord.gg/qrqq8SeN7F"
