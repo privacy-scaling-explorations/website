@@ -38,6 +38,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
+    "prerender": "npm run build && webpack --config ./webpack.prerender.js && node build-prerender",
     "test": "jest"
   },
   "browserslist": {
