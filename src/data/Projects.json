@@ -139,14 +139,14 @@
   },
   {
     "name": "COCO",
-    "description": "Collaborative content curation using a double-or-nothing challenge mechanism.",
+    "description": "Collaborative content curation of online communities using a double-or-nothing challenge mechanism.",
     "image": "coco.png",
     "links": [
       {
         "website": "https://www.cocoverse.club/"
       },
       {
-        "github": "https://github.com/Janmajayamall/meme-curator"
+        "github": "https://github.com/Janmajayamall/coco-contracts"
       }
     ]
   },
