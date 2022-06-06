@@ -61,7 +61,7 @@ function renderBanner(name: string): any {
     saturation: [0.65, 0.85, 1],
   }).hex(name);
   return (
-    <svg height="180px" width="350px" style={{ backgroundColor: colorHashBG }} className="card-img-top">
+    <svg height="150px" width="350px" style={{ backgroundColor: colorHashBG }} className="card-img-top">
       <text
         textAnchor="middle"
         x="50%"
