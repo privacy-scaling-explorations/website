@@ -22,5 +22,17 @@
         "twitter": "https://twitter.com/atheartengineer"
       }
     ]
+  },
+  {
+    "name": "Geoff Lamperd",
+    "description": "Full stack engineer; working on Trusted Setup and Interep",
+    "links": [
+      {
+        "github": "https://github.com/glamperd"
+      },
+      {
+        "twitter": "https://twitter.com/glamperd"
+      }
+    ]
   }
 ]
