@@ -21,7 +21,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npm run build
+          npm run prerender
 
       - name: Deploy to gh-pages-dev branch
         uses: JamesIves/github-pages-deploy-action@v4.3.3

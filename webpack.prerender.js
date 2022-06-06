@@ -1,15 +1,14 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: ['./src/index.tsx'],
+  entry: './scripts/prerender.tsx',
   mode: 'development',
+  target: 'node',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build-prerender'),
+    filename: 'index.js',
     publicPath: '/',
   },
   resolve: {
@@ -22,7 +21,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(png|svg|jpg|gif|ico)$/,
+        test: /\.(png|svg|jpg|gif)$/,
         loader: 'file-loader',
         options: {
           // publicPath: 'build',
@@ -31,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        // exclude: /node_modules/,
+        exclude: /node_modules/,
         use: [{
           loader: MiniCssExtractPlugin.loader,
         }, 'css-loader',]
@@ -39,20 +38,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'public/index.html',
-      filename: 'index.html',
-      inlineSource: '.(js|css)',
-    }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: './public/manifest.json', to: 'manifest.json' },
-      ],
-    }),
-    // new HtmlWebpackInlineSourcePlugin(),
   ],
   optimization: {
     minimizer: [
