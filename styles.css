@@ -204,14 +204,14 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: .35rem;
+  border-radius: 0.35rem;
   box-shadow: var(--box-shadow);
 }
 
 .card-img-top {
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   object-fit: cover;
-  max-height: 180px;
+  max-height: 150px;
 }
 
 .card-body {
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .card-footer .btn {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .link {
@@ -251,10 +251,10 @@ a:hover {
   text-transform: capitalize;
 }
 
-a[href=''],
-a[href='#'],
-a[href='']:hover,
-a[href='#']:hover {
+a[href=""],
+a[href="#"],
+a[href=""]:hover,
+a[href="#"]:hover {
   opacity: 25%;
   cursor: default;
   text-decoration: none;
