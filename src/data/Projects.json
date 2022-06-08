@@ -31,10 +31,10 @@
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
-        "website": "https://hackmd.io/@yezhang/S1_KMMbGt"
+        "website": "https://privacy-scaling-explorations.github.io/zkevm-docs/"
       },
       {
-        "github": "https://github.com/appliedzkp/zkevm-specs"
+        "github": "https://github.com/appliedzkp/zkevm-circuits"
       }
     ]
   },
