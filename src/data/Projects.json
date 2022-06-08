@@ -104,6 +104,7 @@
   {
     "name": "Clr.fund for Everyone",
     "short_name": "Clr.fund",
+    "image": "clr.svg",
     "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
     "links": [
       {
