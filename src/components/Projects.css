@@ -1,9 +1,25 @@
+#Projects {
+  padding-inline: 5rem;
+}
+
+#Projects > p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 .Cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   gap: 2.5rem;
 }
 
 .CardSectionTitle {
   text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.66);
+}
+
+@media screen and (max-width: 800px) {
+  #Projects {
+    padding-inline: 1rem;
+  }
 }

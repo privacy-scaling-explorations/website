@@ -9,8 +9,8 @@ function Projects() {
 
   return (
     <div id="Projects">
-      <h1 className="ProjectTitle mb-4 mt-5">What we are working on</h1>
-      <p>Explore how we integrate ZK primitives into decentralized applications</p>
+      <h1 className="ProjectTitle mb-3 mt-5">What we are working on</h1>
+      <p className="mb-5">Explore how we integrate ZK primitives into decentralized applications</p>
       <div className="Cards">{cards}</div>
     </div>
   );
