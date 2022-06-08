@@ -137,13 +137,12 @@ function TeamMemberCard(props: TeamMemberCardProps) {
   })();
 
   return (
-    <div className="card border border-2 border-dark p-3">
-      {img}
-      <div className="card-body">
-        <h5 className="card-title">{props.name}</h5>
+    <div className="members-card">
+      <div className="members-card-body">
+        <h5 className="members-card-title">{props.name}</h5>
         {renderDescription(props.description)}
       </div>
-      <div className="card-footer">{links}</div>
+      <div className="members-card-footer">{links}</div>
     </div>
   );
 }

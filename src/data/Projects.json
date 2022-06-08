@@ -16,6 +16,7 @@
   },
   {
     "name": "BLS Wallet",
+    "image": "bls.svg",
     "description": "Reduce transaction costs on evm-L2s using BLS signatures. The smart contract wallet also includes: recovery, multi-action, gas-less transactions, and upgradability.",
     "links": [
       {
@@ -28,6 +29,7 @@
   },
   {
     "name": "zkEVM",
+    "image": "zkEVM.svg",
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
@@ -40,7 +42,7 @@
   },
   {
     "name": "MACI (Minimal Anti-Collusion Infrastructure)",
-    "short_name": "MACI",
+    "image": "MACI.svg",
     "description": "MACI uses zero knowledge proofs for collusion resistance in blockchain voting (such as quadratic funding mechanisms) by making it impossible for anyone other than the vote coordinator to verify how a specific user voted. MACI also ensures correct execution of the votes, allowing anyone to verify the results.",
     "links": [
       {
@@ -54,7 +56,7 @@
   {
     "name": "Unirep",
     "description": "Unirep allows anonymous members of a group to give, receive, and prove reputation without revealing their identity. Applications or people can act as attesters and build their own reputation tokens on top of a shared Unirep contract.",
-    "image": "unirep.png",
+    "image": "unirep.svg",
     "links": [
       {
         "website": "https://unirep.social/"
@@ -115,7 +117,7 @@
   {
     "name": "Rate Limiting Nullifier",
     "short_name": "RLN",
-    "image": "rln.png",
+    "image": "rln.svg",
     "description": "RLN is a construct based on zero-knowledge proofs that enables spam prevention mechanism for decentralized, anonymous environments. In anonymous environments, the identity of the entities is unknown.",
     "links": [
       {
