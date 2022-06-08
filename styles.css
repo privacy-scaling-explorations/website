@@ -12,7 +12,7 @@
   --gold: #ffe94d;
   --gray: #282a2d;
   --gray-transparent: rgba(40, 42, 45, 0.5);
-  --box-shadow: -22px 10px 0px var(--gray);
+  --box-shadow: -5px 3px 0px var(--gray);
 
   --twitter: #1da1f2;
   --telegram: #0088cc;
@@ -22,7 +22,7 @@
   --discord: #7289da;
   --website: var(--green);
 
-  --background: var(--purple);
+  --background: #f3f0fe;
   --link-bold: #854ad1;
 }
 
@@ -175,10 +175,6 @@ a:hover {
   max-width: 42rem;
 }
 
-.ethlogo {
-  max-height: 16rem;
-}
-
 .arrow {
   margin: 1rem auto;
   text-align: center;
@@ -210,14 +206,14 @@ a:hover {
   border-color: var(--gray) !important;
 }
 
-/*!********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/MagicCard.css ***!
-  \********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/ProjectCard.css ***!
+  \**********************************************************************************/
 .card {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 0.35rem;
+  border-radius: 0.2rem;
   box-shadow: var(--box-shadow);
 }
 
@@ -273,9 +269,9 @@ a[href="#"]:hover {
   text-decoration: none;
 }
 
-/*!**********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/CardSection.css ***!
-  \**********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Projects.css ***!
+  \*******************************************************************************/
 .Cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -283,8 +279,13 @@ a[href="#"]:hover {
 }
 
 .CardSectionTitle {
-  text-shadow: -1px 1px 1px rgba(255,255,255,0.66);
+  text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.66);
 }
+
+/*!*************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/TeamMemberCard.css ***!
+  \*************************************************************************************/
+
 /*!***************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
   \***************************************************************************/
