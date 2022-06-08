@@ -106,13 +106,6 @@ a:hover {
 */
 
 @media screen and (max-width: 800px) {
-  :root {
-    --box-shadow: -12px 5px 0px var(--gray);
-  }
-  body {
-    margin-inline: 1rem;
-  }
-
   .icon {
     height: 2rem;
   }
