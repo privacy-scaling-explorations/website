@@ -34,5 +34,17 @@
         "twitter": "https://twitter.com/glamperd"
       }
     ]
+  },
+  {
+    "name": "James Zaki",
+    "description": "BLS Wallet project lead and software engineer",
+    "links": [
+      {
+        "github": "https://github.com/jzaki"
+      },
+      {
+        "twitter": "https://twitter.com/james_zaki"
+      }
+    ]
   }
 ]
