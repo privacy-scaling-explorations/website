@@ -2,8 +2,6 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom/server'
 import Home from '../src/HomePage'
-import About from '../src/AboutPage'
-import Team from '../src/TeamPage'
 import fs from 'fs'
 import path from 'path'
 
@@ -11,8 +9,6 @@ const template = fs.readFileSync(path.join(__dirname, '../build/index.html')).to
 
 const pages = [
   { Component: Home, output: '/index.html' },
-  { Component: About, output: '/about' },
-  { Component: Team, output: '/team' },
 ]
 
 for (const page of pages) {
