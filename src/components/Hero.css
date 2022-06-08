@@ -1,4 +1,4 @@
-.starter {
+.hero {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   gap: 1rem;
 }
 
-.starter > * {
+.hero > * {
   margin: 0 auto;
   text-align: center;
 }

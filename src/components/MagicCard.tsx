@@ -25,6 +25,9 @@ interface Links {
 }
 
 function renderLink(url: string, source: string, icon: string, button: boolean = true): any {
+  if (url) {
+
+  }
   if (!button) {
     return (
       <div className="link" key={url}>
@@ -91,20 +94,20 @@ function renderDescription(description: string | string[]): any {
 function MagicCard(props: MagicCardProps) {
   let links = props.links
     ? props.links.map((link) => {
-        if (link.github) {
-          return renderLink(link.github, "github", github);
-        } else if (link.website) {
-          return renderLink(link.website, "website", globe);
-        } else if (link.discord) {
-          return renderLink(link.discord, "discord", discord);
-        } else if (link.twitter) {
-          return renderLink(link.twitter, "twitter", twitter);
-        } else if (link.telegram) {
-          return renderLink(link.telegram, "telegram", telegram);
-        } else {
-          return null;
-        }
-      })
+      if (link.github) {
+        return renderLink(link.github, "github", github);
+      } else if (link.website) {
+        return renderLink(link.website, "website", globe);
+      } else if (link.discord) {
+        return renderLink(link.discord, "discord", discord);
+      } else if (link.twitter) {
+        return renderLink(link.twitter, "twitter", twitter);
+      } else if (link.telegram) {
+        return renderLink(link.telegram, "telegram", telegram);
+      } else {
+        return null;
+      }
+    })
     : null;
 
   let img = (() => {

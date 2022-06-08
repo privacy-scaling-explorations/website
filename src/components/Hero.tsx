@@ -2,11 +2,11 @@ import logo from '../images/pse-logo.svg';
 import arrow from '../images/arrow.svg';
 import discord from '../images/discord.svg';
 import twitter from '../images/twitter.svg';
-import './Starter.css';
+import './Hero.css';
 
-function Starter() {
+function Hero() {
   return (
-    <div className="starter">
+    <div className="hero">
       <img src={logo} alt="eth pse logo" className="pselogo" />
       <div className="intro h-100 p-3 bg-light-purple border border-5 border-dark">
         <h1 className="pt-3 pb-4">Welcome to Privacy & Scaling Explorations</h1>
@@ -44,4 +44,4 @@ function Starter() {
   );
 }
 
-export default Starter;
+export default Hero;

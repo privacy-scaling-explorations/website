@@ -1,7 +1,6 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Starter from './components/Hero';
 import Projects from './components/Projects';
-import Team from './components/Team';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './HomePage.css';
 
@@ -9,9 +8,7 @@ function HomePage() {
   return (
     <div className="Home container-sm">
       <Navbar />
-      <Hero />
       <Projects />
-      <Team />
       <Footer />
     </div>
   );

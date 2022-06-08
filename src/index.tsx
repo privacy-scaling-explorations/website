@@ -12,9 +12,9 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route index element={<HomePage />} />
-      <Route path="projects" element={<HomePage />} />
+      {/*<Route path="projects" element={<HomePage />} />
       <Route path="team" element={<TeamPage />} />
-      <Route path="about" element={<AboutPage />} />
+      <Route path="about" element={<AboutPage />} /> */}
     </Routes>
   </BrowserRouter>
 );

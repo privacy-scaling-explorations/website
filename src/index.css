@@ -18,6 +18,9 @@
   --github: #e8eaea;
   --discord: #7289da;
   --website: var(--green);
+
+  --background: var(--purple);
+  --link-bold: #854ad1;
 }
 
 body {
@@ -25,13 +28,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background: var(--purple);
+  background: var(--background);
   background-attachment: fixed;
   height: 100vh;
   font-family: "Inter", sans-serif;
-  /* background-image: url('./images/pse-deco.png'); */
-  background-repeat: no-repeat;
-  background-position: right -20em bottom 5em;
 }
 
 /*

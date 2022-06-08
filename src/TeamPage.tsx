@@ -1,4 +1,4 @@
-import Starter from './components/Starter';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Team from './components/Team';
 import Footer from './components/Footer';
@@ -7,7 +7,7 @@ import './TeamPage.css';
 function TeamPage() {
   return (
     <div className="container-sm">
-      <Starter />
+      <Hero />
       <Navbar />
       <Team />
       <Footer />
