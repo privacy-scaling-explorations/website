@@ -109,13 +109,6 @@ a:hover {
 */
 
 @media screen and (max-width: 800px) {
-  :root {
-    --box-shadow: -12px 5px 0px var(--gray);
-  }
-  body {
-    margin-inline: 1rem;
-  }
-
   .icon {
     height: 2rem;
   }
@@ -282,14 +275,30 @@ a:hover {
 /*!*******************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Projects.css ***!
   \*******************************************************************************/
+#Projects {
+  padding-inline: 5rem;
+}
+
+#Projects > p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 .Cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   gap: 2.5rem;
 }
 
 .CardSectionTitle {
   text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.66);
+}
+
+@media screen and (max-width: 800px) {
+  #Projects {
+    padding-inline: 1rem;
+  }
 }
 
 /*!*************************************************************************************!*\
@@ -299,6 +308,15 @@ a:hover {
 /*!***************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
   \***************************************************************************/
+#Team {
+  padding-inline: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  #Team {
+    padding-inline: 1rem;
+  }
+}
 
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Footer.css ***!
@@ -316,14 +334,10 @@ a:hover {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/HomePage.css ***!
   \********************************************************************/
 .Home {
-  margin-bottom: 2.5rem;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
+@media screen and (max-width: 800px) {
+  .Home {
+  }
 }
-
 
