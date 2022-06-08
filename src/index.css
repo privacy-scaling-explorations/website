@@ -20,6 +20,8 @@
   --website: var(--green);
 
   --background: #f3f0fe;
+  --text-color: #151616;
+  --border-color: var(--text-color);
   --link-bold: #854ad1;
 }
 
