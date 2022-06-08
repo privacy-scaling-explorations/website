@@ -29,7 +29,6 @@
   },
   {
     "name": "zkEVM",
-    
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
@@ -108,7 +107,7 @@
     "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
     "links": [
       {
-        "website": "https://clrfund-xdai.on.fleek.co/#/"
+        "website": "https://clr.fund/#/"
       },
       {
         "github": "https://clrfund.gitbook.io/deployer/"
