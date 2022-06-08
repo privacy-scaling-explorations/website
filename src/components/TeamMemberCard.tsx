@@ -1,7 +1,7 @@
 import globe from "../images/globe.svg";
 import github from "../images/github.svg";
-import discord from "../images/discord.svg";
-import twitter from "../images/twitter.svg";
+import discord from "../images/discord_round.svg";
+import twitter from "../images/twitter_round.svg";
 import telegram from "../images/telegram.svg";
 import "./TeamMemberCard.css";
 import ColorHash from "color-hash";
@@ -24,7 +24,7 @@ interface Links {
   telegram?: string;
 }
 
-function renderLink(url: string, source: string, icon: string, button: boolean = false, text: boolean = false): any {
+function renderLink(url: string, source: string, icon: string, button: boolean = false, text: boolean = true): any {
   let RgExp = new RegExp('^(?:[a-z]+:)?//', 'i');
   if (!RgExp.test(url)) {
     url = '//' + url;
@@ -33,8 +33,8 @@ function renderLink(url: string, source: string, icon: string, button: boolean =
     return (
       <div className="link" key={url}>
         <a href={url} target="_blank" rel="noopener noreferrer">
-          <img className="icon" src={icon} alt={source} />
           {text ? <div className="link-title">{source}</div> : null}
+          <img className="icon" src={icon} alt={source} />
         </a>
       </div>
     );

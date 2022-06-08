@@ -1,9 +1,16 @@
 #Team {
-  padding-inline: 5rem;
+  padding-inline: 5em;
+}
+
+#Team .Cards {
+  margin-top: 2.75em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
 }
 
 @media screen and (max-width: 800px) {
   #Team {
-    padding-inline: 1rem;
+    padding-inline: 1em;
   }
 }
