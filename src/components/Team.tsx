@@ -8,7 +8,7 @@ function Teams() {
   let [cards] = useState<any[]>([CreateCards(TeamData, true)]);
 
   return (
-    <div className="TeamsSection">
+    <div id="Team">
       <h1 className="TeamTitle mb-4 mt-5">Members</h1>
       <p>PSE is a team of 50 members, below you can find some of our team member's information.</p>
       <div className="Cards">{cards}</div>

@@ -1,4 +1,3 @@
-import logo from '../images/pse-logo.svg';
 import arrow from '../images/arrow.svg';
 import discord from '../images/discord.svg';
 import twitter from '../images/twitter.svg';
@@ -6,8 +5,7 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <div className="hero">
-      <img src={logo} alt="eth pse logo" className="pselogo" />
+    <div id="top" className="hero">
       <div className="intro h-100 p-3 bg-light-purple border border-5 border-dark">
         <h1 className="pt-3 pb-4">Welcome to Privacy & Scaling Explorations</h1>
         <p>

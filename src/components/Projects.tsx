@@ -8,7 +8,7 @@ function Projects() {
   let [cards] = useState<any[]>([CreateCards(ProjectData, true)]);
 
   return (
-    <div className="ProjectsSection">
+    <div id="Projects">
       <h1 className="ProjectTitle mb-4 mt-5">What we are working on</h1>
       <p>Explore how we integrate ZK primitives into decentralized applications</p>
       <div className="Cards">{cards}</div>
