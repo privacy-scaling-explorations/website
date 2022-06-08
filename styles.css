@@ -304,7 +304,30 @@ a:hover {
 /*!*************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/TeamMemberCard.css ***!
   \*************************************************************************************/
+.members-card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:0;
+}
+.members-card-body{
 
+}
+.members-card-title{
+font-weight: 600;
+font-size: 1.8rem;
+line-height: 1.02rem;
+padding-bottom:1rem;
+}
+.card-text{
+    font-size:1.2rem;
+    line-height: 1.2rem;
+    padding:1rem 0;
+}
+.members-card-footer{
+    border-top: 2px solid var(--gray);
+    padding:1rem 0;
+}
 /*!***************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
   \***************************************************************************/
