@@ -21,6 +21,9 @@
   --github: #e8eaea;
   --discord: #7289da;
   --website: var(--green);
+
+  --background: var(--purple);
+  --link-bold: #854ad1;
 }
 
 body {
@@ -28,13 +31,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background: var(--purple);
+  background: var(--background);
   background-attachment: fixed;
   height: 100vh;
   font-family: "Inter", sans-serif;
-  /* background-image: url('./images/pse-deco.png'); */
-  background-repeat: no-repeat;
-  background-position: right -20em bottom 5em;
 }
 
 /*
@@ -133,10 +133,23 @@ a:hover {
   }
 }
 
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Starter.css ***!
-  \******************************************************************************/
-.starter {
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css ***!
+  \*****************************************************************************/
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-buttons > * {
+  font-size: 1.3rem;
+}
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Hero.css ***!
+  \***************************************************************************/
+.hero {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -144,7 +157,7 @@ a:hover {
   gap: 1rem;
 }
 
-.starter > * {
+.hero > * {
   margin: 0 auto;
   text-align: center;
 }
@@ -272,19 +285,10 @@ a[href="#"]:hover {
 .CardSectionTitle {
   text-shadow: -1px 1px 1px rgba(255,255,255,0.66);
 }
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css ***!
-  \*****************************************************************************/
-.nav-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
+  \***************************************************************************/
 
-.nav-buttons > * {
-  font-size: 1.3rem;
-}
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Footer.css ***!
   \*****************************************************************************/
@@ -311,12 +315,4 @@ a[href="#"]:hover {
   gap: 5rem;
 }
 
-
-/*!********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/TeamPage.css ***!
-  \********************************************************************/
-
-/*!********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/AboutCard.css ***!
-  \********************************************************************************/
 
