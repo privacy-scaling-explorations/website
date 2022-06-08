@@ -1,0 +1,9 @@
+#Team {
+  padding-inline: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  #Team {
+    padding-inline: 1rem;
+  }
+}

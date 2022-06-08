@@ -20,7 +20,7 @@ export default Teams;
 
 function CreateCards(cards: TeamMemberCardProps[], shuffle: boolean = true): JSX.Element[] {
   let _cards = cards.map((card: TeamMemberCardProps) => {
-    return <TeamCard key={card.name} {...card} renderBanner={true} />;
+    return <TeamCard key={card.name} {...card} renderBanner={false} />;
   })
 
   if (shuffle) {
