@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 0.2rem;
+  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
 .card-img-top {
-  border-radius: 0.2rem;
+  border-radius: var(--border-radius);
   object-fit: cover;
   max-height: 150px;
 }
