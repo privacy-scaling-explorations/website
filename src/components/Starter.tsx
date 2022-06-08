@@ -22,13 +22,13 @@ function Starter() {
       </div>
       <div className="center">
         <div className="link">
-          <a href="https://twitter.com/PrivacyScaling" className="btn bg-aqua box-shadow">
+          <a href="https://twitter.com/PrivacyScaling" className="btn bg-aqua box-shadow" target="_blank" rel="noopener noreferrer">
             <img src={twitter} alt="" className="icon" />
             <div>Twitter</div>
           </a>
         </div>
         <div className="link">
-          <a href="https://discord.gg/g5YTV7HHbh" className="btn bg-green box-shadow">
+          <a href="https://discord.gg/g5YTV7HHbh" className="btn bg-green box-shadow" target="_blank" rel="noopener noreferrer">
             <img src={discord} alt="" className="icon" />
             <div>Discord</div>
           </a>
