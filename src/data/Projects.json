@@ -1,6 +1,7 @@
 [
   {
     "name": "Zkopru",
+    "image": "zkopru-cover.png",
     "description": "Zkopru is an optimistic rollup that uses zero knowledge proofs to enable private, low-cost transactions with ETH, ERC-20s and NFTs on layer 2.",
     "links": [
       {
@@ -29,7 +30,7 @@
   },
   {
     "name": "zkEVM",
-    
+
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
