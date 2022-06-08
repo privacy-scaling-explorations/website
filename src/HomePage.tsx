@@ -7,7 +7,7 @@ import './HomePage.css';
 
 function HomePage() {
   return (
-    <div className="Home container-sm">
+    <div className="Home">
       <Navbar />
       <Hero />
       <Projects />
