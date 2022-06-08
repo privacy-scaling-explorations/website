@@ -286,7 +286,7 @@ a:hover {
   line-height: 1.2;
 }
 
-.Cards {
+#Projects .Cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   gap: 2.5rem;
@@ -324,40 +324,56 @@ a:hover {
 /*!*************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/TeamMemberCard.css ***!
   \*************************************************************************************/
-.members-card{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding:0;
+.members-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.members-card-body{
 
+.members-card-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.2rem;
+  padding-bottom: 1.5rem;
 }
-.members-card-title{
-font-weight: 600;
-font-size: 1.8rem;
-line-height: 1.02rem;
-padding-bottom:1rem;
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding-bottom: 1.5rem;
 }
-.card-text{
-    font-size:1.2rem;
-    line-height: 1.2rem;
-    padding:1rem 0;
+.members-card-footer {
+  border-top: 2px solid var(--gray);
 }
-.members-card-footer{
-    border-top: 2px solid var(--gray);
-    padding:1rem 0;
+
+.members-card-footer a {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.5em;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
+
+.members-card-footer > *:not(:first-child) {
+  border-top: 2px solid var(--gray);
+}
+
 /*!***************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
   \***************************************************************************/
 #Team {
-  padding-inline: 5rem;
+  padding-inline: 5em;
+}
+
+#Team .Cards {
+  margin-top: 2.75em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
 }
 
 @media screen and (max-width: 800px) {
   #Team {
-    padding-inline: 1rem;
+    padding-inline: 1em;
   }
 }
 
