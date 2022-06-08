@@ -3,10 +3,10 @@ import github from "../images/github.svg";
 import discord from "../images/discord.svg";
 import twitter from "../images/twitter.svg";
 import telegram from "../images/telegram.svg";
-import "./MagicCard.css";
+import "./ProjectCard.css";
 import ColorHash from "color-hash";
 
-export interface MagicCardProps {
+export interface ProjectCardProps {
   name: string;
   short_name?: string;
   description: string | string[];
@@ -24,16 +24,17 @@ interface Links {
   telegram?: string;
 }
 
-function renderLink(url: string, source: string, icon: string, button: boolean = true): any {
-  if (url) {
-
+function renderLink(url: string, source: string, icon: string, button: boolean = false, text: boolean = false): any {
+  let RgExp = new RegExp('^(?:[a-z]+:)?//', 'i');
+  if (!RgExp.test(url)) {
+    url = '//' + url;
   }
   if (!button) {
     return (
       <div className="link" key={url}>
         <a href={url} target="_blank" rel="noopener noreferrer">
           <img className="icon" src={icon} alt={source} />
-          <div className="link-title">{source}</div>
+          {text ? <div className="link-title">{source}</div> : null}
         </a>
       </div>
     );
@@ -48,7 +49,7 @@ function renderLink(url: string, source: string, icon: string, button: boolean =
           style={{ backgroundColor: `var(--${source})` }}
         >
           <img className="icon" src={icon} alt={source} />
-          <div className="link-title">{source}</div>
+          {text ? <div className="link-title">{source}</div> : null}
         </a>
       </div>
     );
@@ -91,7 +92,7 @@ function renderDescription(description: string | string[]): any {
   });
 }
 
-function MagicCard(props: MagicCardProps) {
+function ProjectCard(props: ProjectCardProps) {
   let links = props.links
     ? props.links.map((link) => {
       if (link.github) {
@@ -136,7 +137,7 @@ function MagicCard(props: MagicCardProps) {
   })();
 
   return (
-    <div className="card border border-5 border-dark p-3">
+    <div className="card border border-2 border-dark p-3">
       {img}
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
@@ -147,4 +148,4 @@ function MagicCard(props: MagicCardProps) {
   );
 }
 
-export default MagicCard;
+export default ProjectCard;
