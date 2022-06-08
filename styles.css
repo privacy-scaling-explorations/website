@@ -3,7 +3,7 @@
   \*****************************************************************/
 :root {
   --light-purple: rgb(195, 181, 250);
-  --purple: hsl(252, 45%, 65%);
+  --purple: #cfc4fb;
   --green: #a6e275;
   --aqua: #53d3e0;
   --light-aqua: #cbf2f6;
@@ -25,6 +25,7 @@
   --background: #f3f0fe;
   --text-color: #151616;
   --border-color: var(--text-color);
+  --border-radius: 4px;
   --link-bold: #854ad1;
 }
 
@@ -225,12 +226,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 0.2rem;
+  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
 .card-img-top {
-  border-radius: 0.2rem;
+  border-radius: var(--border-radius);
   object-fit: cover;
   max-height: 150px;
 }
@@ -299,6 +300,25 @@ a:hover {
   #Projects {
     padding-inline: 1rem;
   }
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Discord.css ***!
+  \******************************************************************************/
+#call_to_action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 0 2em;
+  padding: 3.5em;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  background-color: var(--purple);
+}
+
+#call_to_action h2 {
+  font-weight: 900;
 }
 
 /*!*************************************************************************************!*\
