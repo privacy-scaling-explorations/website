@@ -5,28 +5,22 @@ import { shuffleFisherYates } from '../Utils';
 import './Projects.css'
 
 function Projects() {
+  let [cards] = useState<any[]>([CreateCards(ProjectData, true)]);
+
   return (
-    <CardSection title="Projects" cardData={ProjectData} shuffle={false}></CardSection>
+    <div className="ProjectsSection">
+      <h1 className="ProjectTitle mb-4 mt-5">What we are working on</h1>
+      <p>Explore how we integrate ZK primitives into decentralized applications</p>
+      <div className="Cards">{cards}</div>
+    </div>
   );
 }
 
 export default Projects;
 
-interface ICardSection {
-  title: string;
-  cardData: ProjectCardProps[];
-  shuffle?: boolean;
-  renderBanner?: boolean | undefined;
-}
-
-function CreateCards(cards: ProjectCardProps[], shuffle: boolean = true, renderBanner: boolean | undefined): JSX.Element[] {
+function CreateCards(cards: ProjectCardProps[], shuffle: boolean = true): JSX.Element[] {
   let _cards = cards.map((card: ProjectCardProps) => {
-    if (renderBanner == true) {
-      return <ProjectCard key={card.name} {...card} renderBanner={true} />;
-    } else if (renderBanner == false) {
-      return <ProjectCard key={card.name} {...card} renderBanner={false} />;
-    }
-    return <ProjectCard key={card.name} {...card} />;
+    return <ProjectCard key={card.name} {...card} renderBanner={true} />;
   })
 
   if (shuffle) {
@@ -34,15 +28,4 @@ function CreateCards(cards: ProjectCardProps[], shuffle: boolean = true, renderB
   }
 
   return _cards
-}
-
-function CardSection(props: ICardSection) {
-  let [cards] = useState<any[]>([CreateCards(props.cardData, props.shuffle, props.renderBanner)]);
-
-  return (
-    <div className="CardSection">
-      <h1 className="CardSectionTitle mb-4">{props.title}</h1>
-      <div className="Cards">{cards}</div>
-    </div>
-  );
 }
