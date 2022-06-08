@@ -18,7 +18,7 @@ function Starter() {
         <p className="pb-2">
           We facilitate the integration of ZK primitives into decentralized applications.
         </p>
-        <button className="btn bg-pink box-shadow mb-3">We are hiring!</button>
+        <a href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations" target="_blank" rel="noopener noreferrer"><button className="btn bg-pink box-shadow mb-3">We are hiring!</button></a>
       </div>
       <div className="center">
         <div className="link">
