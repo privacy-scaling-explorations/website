@@ -644,7 +644,7 @@ eval("module.exports = JSON.parse('[{\"name\":\"Zkopru\",\"description\":\"Zkopr
 /***/ (function(module) {
 
 "use strict";
-eval("module.exports = JSON.parse('[{\"name\":\"sinu\",\"description\":\"TLSNotary Project Lead and Software Engineer\",\"links\":[{\"github\":\"https://github.com/sinui0\"},{\"twitter\":\"https://twitter.com/sinu_eth\"}]},{\"name\":\"AtHeartEngineer\",\"description\":\"Full stack / systems engineer; working on RLN\",\"links\":[{\"github\":\"https://github.com/atheartengineer\"},{\"twitter\":\"https://twitter.com/atheartengineer\"}]},{\"name\":\"Geoff Lamperd\",\"description\":\"Full stack engineer; working on Trusted Setup and Interep\",\"links\":[{\"github\":\"https://github.com/glamperd\"},{\"twitter\":\"https://twitter.com/glamperd\"}]}]');\n\n//# sourceURL=webpack://pse-landingpage/./src/data/Team.json?");
+eval("module.exports = JSON.parse('[{\"name\":\"sinu\",\"description\":\"TLSNotary Project Lead and Software Engineer\",\"links\":[{\"github\":\"https://github.com/sinui0\"},{\"twitter\":\"https://twitter.com/sinu_eth\"}]},{\"name\":\"AtHeartEngineer\",\"description\":\"Full stack / systems engineer; working on RLN\",\"links\":[{\"github\":\"https://github.com/atheartengineer\"},{\"twitter\":\"https://twitter.com/atheartengineer\"}]},{\"name\":\"Geoff Lamperd\",\"description\":\"Full stack engineer; working on Trusted Setup and Interep\",\"links\":[{\"github\":\"https://github.com/glamperd\"},{\"twitter\":\"https://twitter.com/glamperd\"}]},{\"name\":\"James Zaki\",\"description\":\"BLS Wallet project lead and software engineer\",\"links\":[{\"github\":\"https://github.com/jzaki\"},{\"twitter\":\"https://twitter.com/james_zaki\"}]}]');\n\n//# sourceURL=webpack://pse-landingpage/./src/data/Team.json?");
 
 /***/ })
 
