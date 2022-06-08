@@ -136,16 +136,33 @@ a:hover {
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css ***!
   \*****************************************************************************/
-.nav-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+#navbar {
+  border-bottom: 2px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding-block: 36px;
 }
 
-.nav-buttons > * {
-  font-size: 1.3rem;
+#navbar > * {
+  align-self: center;
+  justify-self: center;
 }
+
+#navbar > img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+
 /*!***************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Hero.css ***!
   \***************************************************************************/
