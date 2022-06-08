@@ -29,7 +29,7 @@
   },
   {
     "name": "zkEVM",
-    "image": "zkEVM.svg",
+    
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
@@ -143,7 +143,7 @@
   {
     "name": "COCO",
     "description": "Collaborative content curation of online communities using a double-or-nothing challenge mechanism.",
-    "image": "coco.png",
+    "image": "Coco.svg",
     "links": [
       {
         "website": "https://www.cocoverse.club/"
@@ -158,6 +158,7 @@
   },
   {
     "name": "Trusted Setup",
+    "image": "trust-setup.svg",
     "description": "Open source infrastructure for running a trusted setup ceremony, in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs.",
     "links": [
       {
