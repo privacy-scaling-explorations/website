@@ -58,5 +58,14 @@
         "twitter": "https://twitter.com/thebeyondr"
       }
     ]
+  },
+  {
+    "name": "Jacob Caban-Tomski",
+    "description": "Full stack engineer; working on BLS Wallet",
+    "links": [
+      {
+        "github": "https://github.com/jacque006"
+      }
+    ]
   }
 ]
