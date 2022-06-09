@@ -46,5 +46,17 @@
         "twitter": "https://twitter.com/james_zaki"
       }
     ]
+  },
+  {
+    "name": "Beyondr (Jeo)",
+    "description": "Designer & developer. Main project is ZKOPRU at the moment but also working on other auxillary projects.",
+    "links": [
+      {
+        "github": "https://github.com/thebeyondr"
+      },
+      {
+        "twitter": "https://twitter.com/thebeyondr"
+      }
+    ]
   }
 ]
