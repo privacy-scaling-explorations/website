@@ -43,12 +43,21 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 700;
-  font-size: 3rem;
   color: var(--black);
   padding: 0px;
   margin: 0px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 p {
@@ -63,6 +72,10 @@ p {
 a {
   text-decoration: none;
   color: var(--black);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*
