@@ -6,7 +6,7 @@ import telegram from "../images/telegram.svg";
 import img_link from "../images/box_arrow_out.svg";
 import "./ProjectCard.css";
 import ColorHash from "color-hash";
-import { title } from 'process';
+import { title } from "process";
 
 export interface ProjectCardProps {
   name: string;
@@ -27,17 +27,11 @@ interface Links {
   documentation?: string;
 }
 
-function renderLink(
-  url: string,
-  source: string,
-  icon: string,
-  button: boolean = false,
-  text: boolean = false
-): any {
+function renderLink(url: string, source: string, icon: string, button: boolean = false, text: boolean = false): any {
   // The next few lines check if the link begins with a protocol like http or https, and if it doesn't, it adds the '//' to the beginning of the link to make it an http(s) link.
-  let RgExp = new RegExp('^(?:[a-z]+:)?//', 'i');
+  let RgExp = new RegExp("^(?:[a-z]+:)?//", "i");
   if (!RgExp.test(url)) {
-    url = '//' + url;
+    url = "//" + url;
   }
   if (!button) {
     return (
@@ -105,28 +99,28 @@ function renderDescription(description: string | string[]): any {
 function ProjectCard(props: ProjectCardProps) {
   const docLinks = props.links
     ? props.links.map((link) => {
-      if (link.github) {
-        return renderLink(link.github, "github", github);
-      } else if (link.documentation) {
-        return renderLink(link.documentation, "website", docs);
-      } else {
-        return null;
-      }
-    })
+        if (link.github) {
+          return renderLink(link.github, "github", github);
+        } else if (link.documentation) {
+          return renderLink(link.documentation, "website", docs);
+        } else {
+          return null;
+        }
+      })
     : null;
 
   const socialLinks = props.links
     ? props.links.map((link) => {
-      if (link.discord) {
-        return renderLink(link.discord, "discord", discord);
-      } else if (link.twitter) {
-        return renderLink(link.twitter, "twitter", twitter);
-      } else if (link.telegram) {
-        return renderLink(link.telegram, "telegram", telegram);
-      } else {
-        return null;
-      }
-    })
+        if (link.discord) {
+          return renderLink(link.discord, "discord", discord);
+        } else if (link.twitter) {
+          return renderLink(link.twitter, "twitter", twitter);
+        } else if (link.telegram) {
+          return renderLink(link.telegram, "telegram", telegram);
+        } else {
+          return null;
+        }
+      })
     : null;
 
   let img = (() => {
@@ -155,42 +149,36 @@ function ProjectCard(props: ProjectCardProps) {
   })();
 
   const title = (props: ProjectCardProps) => {
-    let title_with_link
+    let title_with_link;
     if (props.links) {
       for (let link in props.links) {
         if (props.links[link].website) {
           title_with_link = (
             <a href={props.links[link].website}>
               <div>{props.name}</div>
-              <div style={{ width: '0.8125rem' }} />
-              <img src={img_link} role="presentation" />
+              <div style={{ width: "0.8125rem" }} />
+              <img src={img_link} role="presentation" alt="Go to project website" />
             </a>
-          )
+          );
         }
       }
     }
     if (title_with_link) {
       return title_with_link;
     }
-    return (<div>{props.name}</div>);
-  }
+    return <div>{props.name}</div>;
+  };
 
   return (
     <div className="card border border-dark">
       {img}
       <div className="card-body">
-        <div className="card-title">
-          {title(props)}
-        </div>
+        <div className="card-title">{title(props)}</div>
         {renderDescription(props.description)}
       </div>
       <div className="card-footer">
-        <div className="docs-links">
-          {docLinks}
-        </div>
-        <div className="social-links">
-          {socialLinks}
-        </div>
+        <div className="docs-links">{docLinks}</div>
+        <div className="social-links">{socialLinks}</div>
       </div>
     </div>
   );

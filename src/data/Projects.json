@@ -112,7 +112,7 @@
     "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
     "links": [
       {
-        "website": "qf.ethprague.com/"
+        "website": "https://qf.ethprague.com/"
       },
       {
         "documentation": "https://clrfund.gitbook.io/deployer/"
@@ -142,10 +142,10 @@
     "description": "Anonymous and private chat environments, using Interep for a privacy preserving registry and sybil resistance and RLN for spam protection.",
     "links": [
       {
-        "website": "zkchat.org"
+        "website": "https://zkchat.org"
       },
       {
-        "github": "github.com/njofce/zk-chat"
+        "github": "https://github.com/njofce/zk-chat"
       }
     ]
   },
@@ -171,10 +171,10 @@
     "description": "Open source infrastructure for running a trusted setup ceremony, in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs.",
     "links": [
       {
-        "github": "github.com/privacy-scaling-explorations/perpetualpowersoftau"
+        "github": "https://github.com/privacy-scaling-explorations/perpetualpowersoftau"
       },
       {
-        "github": "github.com/zkparty/setup-mpc-ui"
+        "github": "https://github.com/zkparty/setup-mpc-ui"
       }
     ]
   },
