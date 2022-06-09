@@ -48,7 +48,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   color: var(--black);
   padding: 0px;
   margin: 0px;
@@ -269,17 +269,42 @@ a {
   max-height: 150px;
 }
 
+.card-text-project {
+  line-height: 125%;
+  font-weight: 400;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-block: 1.5rem;
+}
+
 .card-body {
   align-self: flex-start;
+  flex: 1;
 }
 
 .card-footer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 2px solid #9EA3A7;
+  padding-top: 1rem;
+  margin-top: 2.5rem;
+  /* flex-wrap: wrap;
   background-color: transparent;
   padding: 1em 0em;
   border-top: 2px solid var(--gray);
-  align-self: stretch;
+  align-self: stretch; */
+}
+
+.docs-links {
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .card-footer .btn {
@@ -297,9 +322,9 @@ a {
 }
 
 .icon {
-  height: 1.35rem;
-  padding-block: 0.125rem;
-  padding-inline-end: 0.35rem;
+  height: 2rem;
+  padding-bottom: calc(2rem - var(--padding));
+  padding-inline: 1.125rem;
 }
 
 .link-title {
@@ -315,8 +340,8 @@ a {
 
 #Projects > p {
   font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 #Projects .Cards {
