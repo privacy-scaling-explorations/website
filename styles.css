@@ -428,9 +428,6 @@ a {
   border-top: 2px solid var(--black);
 }
 
-/*!**********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/TeamLinkRow.css ***!
-  \**********************************************************************************/
 .team-link {
   padding: 0.125rem;
   display: flex;
