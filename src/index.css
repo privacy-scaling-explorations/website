@@ -32,6 +32,8 @@
 
 body {
   color: var(--black);
+  margin: 0 auto;
+  max-width: 1800px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
