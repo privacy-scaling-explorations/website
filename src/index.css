@@ -11,6 +11,7 @@
   --gray-transparent: rgba(40, 42, 45, 0.5);
   --white: #fcfcfc;
   --box-shadow: -5px 3px 0px var(--gray);
+  --black: #151616;
 
   --twitter: #1da1f2;
   --telegram: #0088cc;
@@ -30,7 +31,7 @@
 }
 
 body {
-  color: var(--gray);
+  color: var(--black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -38,6 +39,23 @@ body {
   background-attachment: fixed;
   height: 100vh;
   font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--black);
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*

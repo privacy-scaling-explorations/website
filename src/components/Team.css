@@ -3,10 +3,8 @@
 }
 
 #Team .Cards {
-  margin-top: 2.75em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 800px) {

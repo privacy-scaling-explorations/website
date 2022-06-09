@@ -139,7 +139,7 @@ function TeamMemberCard(props: TeamMemberCardProps) {
   return (
     <div className="members-card">
       <div className="members-card-body">
-        <h5 className="members-card-title">{props.name}</h5>
+        <div className="members-card-title">{props.name}</div>
         {renderDescription(props.description)}
       </div>
       <div className="members-card-footer">{links}</div>

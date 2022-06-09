@@ -2,31 +2,35 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-top: 4rem;
+  margin-right: 2rem;
+  width: 26.125rem;
 }
 
 .members-card-title {
   font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
+
 .card-text {
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  line-height: 125%;
   padding-bottom: 1.5rem;
 }
+
 .members-card-footer {
-  border-top: 2px solid var(--gray);
+  border-top: 2px solid var(--black);
 }
 
 .members-card-footer a {
   display: flex;
   justify-content: space-between;
-  padding-block: 0.5em;
-  font-weight: 600;
-  font-size: 0.9rem;
+  padding: 1rem 0px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black);
 }
 
 .members-card-footer > *:not(:first-child) {
-  border-top: 2px solid var(--gray);
+  border-top: 2px solid var(--black);
 }
