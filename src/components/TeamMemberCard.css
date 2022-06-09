@@ -32,3 +32,23 @@
 .members-card-footer > *:not(:first-child) {
   border-top: 2px solid var(--black);
 }
+
+.team-link {
+  padding: 0.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-link a {
+  display: flex;
+  align-items: center;
+}
+
+.team-icon {
+  height: 2rem;
+}
+
+.team-link-title {
+  text-transform: capitalize;
+}

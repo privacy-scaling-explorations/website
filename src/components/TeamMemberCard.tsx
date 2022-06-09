@@ -4,8 +4,12 @@ import discord from "../images/discord_round.svg";
 import twitter from "../images/twitter_round.svg";
 import telegram from "../images/telegram.svg";
 import "./TeamMemberCard.css";
-import ColorHash from "color-hash";
-import TeamLinkRow from "./TeamLinkRow";
+const images = {
+  github,
+  discord,
+  twitter,
+  telegram,
+} as any
 
 export interface TeamMemberCardProps {
   name: string;
@@ -43,7 +47,12 @@ function TeamMemberCard(props: TeamMemberCardProps) {
         {renderDescription(props.description)}
       </div>
       <div className="members-card-footer">
-        {(props.links || []).map((link) => <TeamLinkRow key={link.provider} {...link} />)}
+        {(props.links || []).map(({ url, provider }) => (
+          <a className="team-link" href={url} target="_blank" rel="noopener noreferrer" key={url}>
+            <div className="team-link-title">{provider}</div>
+            <img className="team-icon" src={images[provider] || globe} alt={''} />
+          </a>
+        ))}
       </div>
     </div>
   );
