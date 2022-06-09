@@ -21,9 +21,18 @@
 }
 
 .card-title {
+  display: flex;
+}
+
+.card-title > div,
+.card-title > a > div {
   font-weight: 700;
   font-size: 1.5rem;
   padding-block: 1.5rem;
+}
+
+.card-title > a > * {
+  display: inline-flex;
 }
 
 .card-body {
@@ -34,7 +43,7 @@
 .card-footer {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #9EA3A7;
+  border-top: 2px solid #9ea3a7;
   padding-top: 1rem;
   margin-top: 2.5rem;
   /* flex-wrap: wrap;
@@ -69,7 +78,7 @@
 
 .icon {
   height: 2rem;
-  padding-bottom: calc(2rem - var(--padding));
+  padding-bottom: calc(1rem - var(--padding));
   padding-inline: 1.125rem;
 }
 

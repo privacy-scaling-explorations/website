@@ -1,11 +1,12 @@
-import globe from "../images/website.svg";
+import docs from "../images/website.svg";
 import github from "../images/github.svg";
 import discord from "../images/discord.svg";
 import twitter from "../images/twitter.svg";
 import telegram from "../images/telegram.svg";
-import link from "../images/box_arrow_out.svg";
+import img_link from "../images/box_arrow_out.svg";
 import "./ProjectCard.css";
 import ColorHash from "color-hash";
+import { title } from 'process';
 
 export interface ProjectCardProps {
   name: string;
@@ -23,9 +24,17 @@ interface Links {
   discord?: string;
   twitter?: string;
   telegram?: string;
+  documentation?: string;
 }
 
-function renderLink(url: string, source: string, icon: string, button: boolean = false, text: boolean = false): any {
+function renderLink(
+  url: string,
+  source: string,
+  icon: string,
+  button: boolean = false,
+  text: boolean = false
+): any {
+  // The next few lines check if the link begins with a protocol like http or https, and if it doesn't, it adds the '//' to the beginning of the link to make it an http(s) link.
   let RgExp = new RegExp('^(?:[a-z]+:)?//', 'i');
   if (!RgExp.test(url)) {
     url = '//' + url;
@@ -98,8 +107,8 @@ function ProjectCard(props: ProjectCardProps) {
     ? props.links.map((link) => {
       if (link.github) {
         return renderLink(link.github, "github", github);
-      } else if (link.website) {
-        return renderLink(link.website, "website", globe);
+      } else if (link.documentation) {
+        return renderLink(link.documentation, "website", docs);
       } else {
         return null;
       }
@@ -145,14 +154,33 @@ function ProjectCard(props: ProjectCardProps) {
     }
   })();
 
+  const title = (props: ProjectCardProps) => {
+    let title_with_link
+    if (props.links) {
+      for (let link in props.links) {
+        if (props.links[link].website) {
+          title_with_link = (
+            <a href={props.links[link].website}>
+              <div>{props.name}</div>
+              <div style={{ width: '0.8125rem' }} />
+              <img src={img_link} />
+            </a>
+          )
+        }
+      }
+    }
+    if (title_with_link) {
+      return title_with_link;
+    }
+    return (<div>{props.name}</div>);
+  }
+
   return (
     <div className="card border border-dark">
       {img}
       <div className="card-body">
-        <div style={{ display: 'flex' }}>
-          <div className="card-title">{props.name}</div>
-          <div style={{ width: '0.8125rem' }} />
-          <img src={link} />
+        <div className="card-title">
+          {title(props)}
         </div>
         {renderDescription(props.description)}
       </div>
