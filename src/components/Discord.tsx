@@ -6,7 +6,7 @@ import './Discord.css'
 function Discord() {
   return (
     <div id="call_to_action">
-      <h2>
+      <h2 className="text-3xl">
         Join our conversation on Discord!
       </h2>
       <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer">
