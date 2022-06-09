@@ -14,6 +14,7 @@
   --gray-transparent: rgba(40, 42, 45, 0.5);
   --white: #fcfcfc;
   --box-shadow: -5px 3px 0px var(--gray);
+  --black: #151616;
 
   --twitter: #1da1f2;
   --telegram: #0088cc;
@@ -33,7 +34,7 @@
 }
 
 body {
-  color: var(--gray);
+  color: var(--black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -41,6 +42,23 @@ body {
   background-attachment: fixed;
   height: 100vh;
   font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--black);
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*
@@ -258,33 +276,37 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-top: 4rem;
+  margin-right: 2rem;
+  width: 26.125rem;
 }
 
 .members-card-title {
   font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
+
 .card-text {
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  line-height: 125%;
   padding-bottom: 1.5rem;
 }
+
 .members-card-footer {
-  border-top: 2px solid var(--gray);
+  border-top: 2px solid var(--black);
 }
 
 .members-card-footer a {
   display: flex;
   justify-content: space-between;
-  padding-block: 0.5em;
-  font-weight: 600;
-  font-size: 0.9rem;
+  padding: 1rem 0px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black);
 }
 
 .members-card-footer > *:not(:first-child) {
-  border-top: 2px solid var(--gray);
+  border-top: 2px solid var(--black);
 }
 
 /*!***************************************************************************!*\
@@ -295,10 +317,8 @@ body {
 }
 
 #Team .Cards {
-  margin-top: 2.75em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 800px) {
