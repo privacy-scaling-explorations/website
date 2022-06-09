@@ -5,12 +5,14 @@ import { shuffleFisherYates } from '../Utils';
 import './Projects.css'
 
 function Projects() {
-  let [cards] = useState<any[]>([CreateCards(ProjectData, true)]);
+  const [cards] = useState<any[]>([CreateCards(ProjectData, true)]);
 
   return (
     <div id="Projects">
-      <h1 className="ProjectTitle mb-3 mt-5">What we are working on</h1>
-      <p className="mb-5">Explore how we integrate ZK primitives into decentralized applications</p>
+      <h1 className="">What we are working on</h1>
+      <div style={{ height: '1.375rem' }} />
+      <p className="">Explore how we integrate ZK primitives into decentralized applications</p>
+      <div style={{ height: '4.4375rem' }} />
       <div className="Cards">{cards}</div>
     </div>
   );

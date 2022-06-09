@@ -1,8 +1,9 @@
-import globe from "../images/globe.svg";
+import globe from "../images/website.svg";
 import github from "../images/github.svg";
 import discord from "../images/discord.svg";
 import twitter from "../images/twitter.svg";
 import telegram from "../images/telegram.svg";
+import link from "../images/box_arrow_out.svg";
 import "./ProjectCard.css";
 import ColorHash from "color-hash";
 
@@ -81,11 +82,11 @@ function renderBanner(name: string): any {
 
 function renderDescription(description: string | string[]): any {
   if (typeof description === "string") {
-    return <p className="card-text">{description}</p>;
+    return <p className="card-text-project">{description}</p>;
   }
   return description.map((text: string, index: number) => {
     return (
-      <p className="card-text" key={index}>
+      <p className="card-text-project" key={index}>
         {text}
       </p>
     );
@@ -93,13 +94,21 @@ function renderDescription(description: string | string[]): any {
 }
 
 function ProjectCard(props: ProjectCardProps) {
-  let links = props.links
+  const docLinks = props.links
     ? props.links.map((link) => {
       if (link.github) {
         return renderLink(link.github, "github", github);
       } else if (link.website) {
         return renderLink(link.website, "website", globe);
-      } else if (link.discord) {
+      } else {
+        return null;
+      }
+    })
+    : null;
+
+  const socialLinks = props.links
+    ? props.links.map((link) => {
+      if (link.discord) {
         return renderLink(link.discord, "discord", discord);
       } else if (link.twitter) {
         return renderLink(link.twitter, "twitter", twitter);
@@ -137,13 +146,24 @@ function ProjectCard(props: ProjectCardProps) {
   })();
 
   return (
-    <div className="card border border-dark p-4">
+    <div className="card border border-dark">
       {img}
       <div className="card-body">
-        <h3>{props.name}</h3>
+        <div style={{ display: 'flex' }}>
+          <div className="card-title">{props.name}</div>
+          <div style={{ width: '0.8125rem' }} />
+          <img src={link} />
+        </div>
         {renderDescription(props.description)}
       </div>
-      <div className="card-footer">{links}</div>
+      <div className="card-footer">
+        <div className="docs-links">
+          {docLinks}
+        </div>
+        <div className="social-links">
+          {socialLinks}
+        </div>
+      </div>
     </div>
   );
 }
