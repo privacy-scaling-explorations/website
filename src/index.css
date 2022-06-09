@@ -24,7 +24,9 @@
   --text-color: #151616;
   --border-color: var(--text-color);
   --border-radius: 4px;
+  --border: 1px solid var(--border-color);
   --link-bold: #854ad1;
+  --padding: 10px;
 }
 
 body {

@@ -5,6 +5,8 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   background-color: var(--white);
+  padding: var(--padding);
+  border: var(--border);
 }
 
 .card-img-top {

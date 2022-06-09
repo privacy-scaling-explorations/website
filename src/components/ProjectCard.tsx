@@ -137,10 +137,10 @@ function ProjectCard(props: ProjectCardProps) {
   })();
 
   return (
-    <div className="card border border-2 border-dark p-3">
+    <div className="card border border-dark p-4">
       {img}
       <div className="card-body">
-        <h5 className="card-title">{props.name}</h5>
+        <h3>{props.name}</h3>
         {renderDescription(props.description)}
       </div>
       <div className="card-footer">{links}</div>
