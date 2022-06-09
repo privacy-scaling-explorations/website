@@ -4,6 +4,7 @@
   flex-direction: column;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  background-color: var(--white);
 }
 
 .card-img-top {

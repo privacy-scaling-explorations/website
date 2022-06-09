@@ -9,6 +9,7 @@
   --gold: #ffe94d;
   --gray: #282a2d;
   --gray-transparent: rgba(40, 42, 45, 0.5);
+  --white: #fcfcfc;
   --box-shadow: -5px 3px 0px var(--gray);
 
   --twitter: #1da1f2;
@@ -38,90 +39,8 @@ body {
 }
 
 /*
-  Theming Utility classes
-*/
-
-.bg-pink {
-  background-color: var(--pink);
-}
-
-.bg-purple {
-  background-color: var(--light-purple);
-}
-
-.bg-green {
-  background-color: var(--green);
-}
-
-.bg-aqua {
-  background-color: var(--light-aqua);
-}
-
-.bg-light-purple {
-  background-color: var(--light-purple);
-}
-
-.bg-light-pink {
-  background-color: var(--light-pink);
-}
-
-.bg-light-aqua {
-  background-color: var(--light-aqua);
-}
-
-.box-shadow {
-  box-shadow: -5px 3px 0px var(--gray);
-}
-
-/*
-  Button Theming
-*/
-
-.btn {
-  color: var(--gray);
-  font-weight: 500;
-  margin: 0.25rem;
-  border: 2px solid var(--gray);
-}
-
-.btn:hover {
-  text-decoration: none;
-  border-color: var(--gray-transparent);
-}
-
-/*
-  Link Theming
-*/
-
-a {
-  text-decoration: none;
-  color: var(--gray) !important;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/*
-  Corrections for responsiveness
+  Responsiveness
 */
 
 @media screen and (max-width: 800px) {
-  .icon {
-    height: 2rem;
-  }
-
-  .row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    padding-block: 2rem;
-    padding-inline: 1rem;
-  }
-
-  .row > .link {
-    width: auto;
-  }
-
-  .center {
-    gap: 2rem;
-  }
 }
