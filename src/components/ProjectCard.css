@@ -5,7 +5,7 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   background-color: var(--white);
-  padding: var(--padding);
+  padding: 1.2rem;
   border: var(--border);
 }
 
@@ -16,8 +16,9 @@
 }
 
 .card-text-project {
-  line-height: 125%;
+  line-height: 150%;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .card-title {
