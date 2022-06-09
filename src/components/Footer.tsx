@@ -24,12 +24,12 @@ export default function Footer() {
         </div>
       </div>
       <div id="footer-links">
-        <a href="https://discord.gg/g5YTV7HHbh" className="ms-3">
+        <a href="https://discord.gg/g5YTV7HHbh" className="ml-3">
           <span>Chat with us</span>
           <img src={discord} alt="Discord Icon" />
 
         </a>
-        <a href="https://twitter.com/PrivacyScaling" className="ms-3">
+        <a href="https://twitter.com/PrivacyScaling" className="ml-3">
           <span>Follow Updates</span>
           <img src={twitter} alt="Twitter Icon" />
 
