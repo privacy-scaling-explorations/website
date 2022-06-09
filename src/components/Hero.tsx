@@ -10,13 +10,6 @@ function Hero() {
         <p>Privacy & Scaling Explorations</p>
         <h1 className="pt-3 pb-4 title">Enhancing Ethereum through cryptographic research.</h1>
         <p className="pb-2">We facilitate the integration of ZK primitives into decentralized applications.</p>
-        <a
-          href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="btn bg-pink box-shadow mb-3">We are hiring!</button>
-        </a>
       </div>
       <div className="center">
         <div className="link">
