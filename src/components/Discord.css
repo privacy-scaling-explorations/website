@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5em 0 4em;
+  margin: 5rem 0 4rem;
   padding: 3.5em;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   border-left: none;
   border-right: none;
   background-color: var(--purple);
 }
 
-#call_to_action h2 {
-  font-weight: 900;
+.discord-text {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 125%;
 }

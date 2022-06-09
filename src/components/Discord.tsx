@@ -6,11 +6,11 @@ import './Discord.css'
 function Discord() {
   return (
     <div id="call_to_action">
-      <h2 className="text-3xl">
+      <div className="discord-text">
         Join our conversation on Discord!
-      </h2>
+      </div>
       <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer">
-        <img src={discord} alt="" />
+        <img style={{ width: '4rem' }} src={discord} alt="" />
       </a>
     </div>
   )
