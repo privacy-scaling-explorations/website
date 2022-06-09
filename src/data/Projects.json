@@ -16,7 +16,6 @@
   },
   {
     "name": "BLS Wallet",
-    "image": "bls.svg",
     "description": "Reduce transaction costs on evm-L2s using BLS signatures. The smart contract wallet also includes: recovery, multi-action, gas-less transactions, and upgradability.",
     "links": [
       {
@@ -32,16 +31,16 @@
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
-        "website": "https://privacy-scaling-explorations.github.io/zkevm-docs/"
+        "website": "https://hackmd.io/@yezhang/S1_KMMbGt"
       },
       {
-        "github": "https://github.com/appliedzkp/zkevm-circuits"
+        "github": "https://github.com/appliedzkp/zkevm-specs"
       }
     ]
   },
   {
     "name": "MACI (Minimal Anti-Collusion Infrastructure)",
-    "image": "MACI.svg",
+    "short_name": "MACI",
     "description": "MACI uses zero knowledge proofs for collusion resistance in blockchain voting (such as quadratic funding mechanisms) by making it impossible for anyone other than the vote coordinator to verify how a specific user voted. MACI also ensures correct execution of the votes, allowing anyone to verify the results.",
     "links": [
       {
@@ -55,7 +54,7 @@
   {
     "name": "Unirep",
     "description": "Unirep allows anonymous members of a group to give, receive, and prove reputation without revealing their identity. Applications or people can act as attesters and build their own reputation tokens on top of a shared Unirep contract.",
-    "image": "unirep.svg",
+    "image": "unirep.png",
     "links": [
       {
         "website": "https://unirep.social/"
@@ -101,23 +100,22 @@
     ]
   },
   {
-    "name": "Clr.fund for Everyone",
-    "short_name": "Clr.fund",
-    "image": "clr.svg",
-    "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
+    "name": "Quadratic Funding Infrastructure",
+    "short_name": "QFI",
+    "description": "Infrastructure to make it easy for any community to run their own Quadratic Funding round with clr.fund and MACI.",
     "links": [
       {
-        "website": "https://clr.fund/#/"
+        "website": "https://qf.ethprague.com/"
       },
       {
-        "github": "https://clrfund.gitbook.io/deployer/"
+        "github": "https://github.com/quadratic-funding/qfi"
       }
     ]
   },
   {
     "name": "Rate Limiting Nullifier",
     "short_name": "RLN",
-    "image": "rln.svg",
+    "image": "rln.png",
     "description": "RLN is a construct based on zero-knowledge proofs that enables spam prevention mechanism for decentralized, anonymous environments. In anonymous environments, the identity of the entities is unknown.",
     "links": [
       {
@@ -133,17 +131,17 @@
     "description": "Anonymous and private chat environments, using Interep for a privacy preserving registry and sybil resistance and RLN for spam protection.",
     "links": [
       {
-        "website": "zkchat.org"
+        "website": "https://zkchat.org"
       },
       {
-        "github": "github.com/njofce/zk-chat"
+        "github": "https://github.com/njofce/zk-chat"
       }
     ]
   },
   {
     "name": "COCO",
     "description": "Collaborative content curation of online communities using a double-or-nothing challenge mechanism.",
-    "image": "Coco.svg",
+    "image": "coco.png",
     "links": [
       {
         "website": "https://www.cocoverse.club/"
@@ -158,14 +156,13 @@
   },
   {
     "name": "Trusted Setup",
-    "image": "trust-setup.svg",
     "description": "Open source infrastructure for running a trusted setup ceremony, in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs.",
     "links": [
       {
-        "github": "github.com/privacy-scaling-explorations/perpetualpowersoftau"
+        "github": "https://github.com/privacy-scaling-explorations/perpetualpowersoftau"
       },
       {
-        "github": "github.com/zkparty/setup-mpc-ui"
+        "github": "https://github.com/zkparty/setup-mpc-ui"
       }
     ]
   },
