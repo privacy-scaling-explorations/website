@@ -29,6 +29,8 @@
   },
   {
     "name": "zkEVM",
+    "image": "zkEVM.svg",
+
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
@@ -130,6 +132,7 @@
   },
   {
     "name": "zk-chat",
+    "image": "zkchat.svg",
     "description": "Anonymous and private chat environments, using Interep for a privacy preserving registry and sybil resistance and RLN for spam protection.",
     "links": [
       {
