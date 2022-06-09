@@ -1,6 +1,7 @@
 #footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
   border-top: 2px solid var(--gray);
   margin: 3em 5em;
@@ -52,8 +53,10 @@
 
 @media screen and (max-width: 800px) {
   #footer {
-    margin: 1em 3em;
+    margin: 1em 0em;
+    margin-top: 4rem;
     padding: 1em;
+    justify-content: center;
   }
 
   #copyright img {
@@ -62,8 +65,9 @@
 
   #footer-links {
     flex-direction: column;
+    margin-top: 4rem;
   }
   #footer-links img {
-    max-width: 20px;
+    max-width: 3rem;
   }
 }
