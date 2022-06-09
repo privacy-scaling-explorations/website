@@ -398,8 +398,6 @@ a {
   justify-content: space-between;
   flex-direction: column;
   margin-top: 4rem;
-  margin-right: 2rem;
-  width: 26.125rem;
 }
 
 .members-card-title {
@@ -430,6 +428,29 @@ a {
   border-top: 2px solid var(--black);
 }
 
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/TeamLinkRow.css ***!
+  \**********************************************************************************/
+.team-link {
+  padding: 0.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-link a {
+  display: flex;
+  align-items: center;
+}
+
+.team-icon {
+  height: 2rem;
+}
+
+.team-link-title {
+  text-transform: capitalize;
+}
+
 /*!***************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
   \***************************************************************************/
@@ -438,8 +459,9 @@ a {
 }
 
 #Team .Cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
 }
 
 @media screen and (max-width: 800px) {
