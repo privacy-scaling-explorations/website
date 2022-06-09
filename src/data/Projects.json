@@ -1,6 +1,7 @@
 [
   {
     "name": "Zkopru",
+    "image": "zkopru-cover.png",
     "description": "Zkopru is an optimistic rollup that uses zero knowledge proofs to enable private, low-cost transactions with ETH, ERC-20s and NFTs on layer 2.",
     "links": [
       {
