@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <nav id="nav-menu">
-      <nav id="navbar">
+      <nav id="navbar" aria-label="Navigation for Desktop">
         <div id="anchor-links" className="nav-links">
           <a href="#top">About</a>
           <a href="#Projects">Projects</a>
@@ -24,20 +24,20 @@ function Navbar() {
         </a>
         <div id="social-links" className="nav-links">
           <a id="job-openings" href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations" target="_blank" rel="noopener noreferrer">Job Openings</a>
-          <a href="https://twitter.com/PrivacyScaling" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/PrivacyScaling" aria-label="PSE Twitter link" target="_blank" rel="noopener noreferrer">
             <img src={twitter} alt="" />
           </a>
-          <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.gg/g5YTV7HHbh" aria-label="PSE Discord link" target="_blank" rel="noopener noreferrer">
             <img src={discord} alt="" />
           </a>
         </div>
         <div id="menu-link" onClick={() => { toggleMenu() }}>{isOpen ? 'Close' : 'Menu'}</div>
       </nav>
-      <nav id="nav-menu-mobile" className={isOpen ? 'menu-open' : 'menu-closed'}>
+      <nav id="nav-menu-mobile" aria-label="Navigation for Mobile" className={isOpen ? 'menu-open' : 'menu-closed'}>
         <a href="#top">About</a>
         <a href="#Projects">Projects</a>
         <a href="#Team">Members</a>
-        <a id="job-openings" href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations" target="_blank" rel="noopener noreferrer">Job Openings</a>
+        <a id="job-openings-mobile" href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations" target="_blank" rel="noopener noreferrer">Job Openings</a>
       </nav>
     </nav>
   )

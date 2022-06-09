@@ -15,7 +15,7 @@ function copyright() {
 
 export default function Footer() {
   return (
-    <div id="footer">
+    <footer>
       <div id="copyright">
         <img src={logo} alt="Pse Logo" />
         <div id="footer-text">
@@ -33,6 +33,6 @@ export default function Footer() {
           <img src={twitter} alt="Twitter Icon" />
         </a>
       </div>
-    </div>
+    </footer>
   );
 }

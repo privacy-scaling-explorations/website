@@ -163,7 +163,7 @@ function ProjectCard(props: ProjectCardProps) {
             <a href={props.links[link].website}>
               <div>{props.name}</div>
               <div style={{ width: '0.8125rem' }} />
-              <img src={img_link} />
+              <img src={img_link} role="presentation" />
             </a>
           )
         }
