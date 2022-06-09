@@ -1,11 +1,11 @@
 import TeamData from '../data/Team.json';
-import { useState } from 'react';
 import TeamCard, { TeamMemberCardProps } from './TeamMemberCard';
 import { shuffleFisherYates } from '../Utils';
 import './Team.css'
 
+const cards = CreateCards(true)
+
 function Teams() {
-  const [cards] = useState<any[]>([CreateCards(TeamData, true)]);
 
   return (
     <div id="Team">
@@ -19,8 +19,8 @@ function Teams() {
 
 export default Teams;
 
-function CreateCards(cards: TeamMemberCardProps[], shuffle: boolean = true): JSX.Element[] {
-  let _cards = cards.map((card: TeamMemberCardProps) => {
+function CreateCards(shuffle: boolean = true): JSX.Element[] {
+  let _cards = TeamData.map((card: TeamMemberCardProps) => {
     return <TeamCard key={card.name} {...card} renderBanner={false} />;
   })
 
