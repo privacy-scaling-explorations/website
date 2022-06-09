@@ -27,7 +27,9 @@
   --text-color: #151616;
   --border-color: var(--text-color);
   --border-radius: 4px;
+  --border: 1px solid var(--border-color);
   --link-bold: #854ad1;
+  --padding: 10px;
 }
 
 body {
@@ -76,6 +78,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 3rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.125rem;
 }
 
 /*!***************************************************************************!*\
@@ -148,6 +156,8 @@ body {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   background-color: var(--white);
+  padding: var(--padding);
+  border: var(--border);
 }
 
 .card-img-top {
@@ -253,7 +263,7 @@ body {
 .members-card-title {
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 2rem;
+  line-height: 1.2;
   padding-bottom: 1.5rem;
 }
 .card-text {
