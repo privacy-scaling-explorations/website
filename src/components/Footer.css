@@ -1,12 +1,11 @@
-#footer {
+footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
   border-top: 2px solid var(--gray);
-  margin: 3em 5em;
-  margin-top: 6.4125rem;
-  padding-top: 2.4rem;
+  margin: 6.5rem 5em 1rem;
+  padding-block: 2.4rem;
 }
 
 #copyright {
@@ -52,7 +51,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  #footer {
+  footer {
     margin: 1em 0em;
     margin-top: 4rem;
     padding: 1em;

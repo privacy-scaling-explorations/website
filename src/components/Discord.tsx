@@ -9,7 +9,7 @@ function Discord() {
       <div className="discord-text">
         Join our conversation on Discord!
       </div>
-      <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer">
+      <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer" aria-label="PSE Discord link" >
         <img style={{ width: '4rem' }} src={discord} alt="" />
       </a>
     </div>
