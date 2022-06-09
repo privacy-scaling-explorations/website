@@ -1,6 +1,7 @@
 import "./Footer.css";
-import discord from "../images/discord.svg";
-import twitter from "../images/twitter.svg";
+import logo from '../images/pse-logo.svg';
+import discord from "../images/discord_round.svg";
+import twitter from "../images/twitter_round.svg";
 
 function copyright() {
   let websiteCreationYear = 2022;
@@ -14,18 +15,26 @@ function copyright() {
 
 export default function Footer() {
   return (
-    <div className="footer">
-      <p id="copyright">The Privacy and Scaling Exploration Team © {copyright()}</p>
-      <p >
-        <a href="https://twitter.com/PrivacyScaling" className="ms-3">
-          <img src={twitter} alt="" className="icon" />
-          <span>Twitter</span>
-        </a>
+    <div id="footer">
+      <div id="copyright">
+        <img src={logo} alt="Pse Logo" />
+        <div id="footer-text">
+          <p id="footer-title">Privacy and Scaling Exploration Team © {copyright()}</p>
+          <p>A multidisciplinary team supported by the Ethereum Foundation.</p>
+        </div>
+      </div>
+      <div id="footer-links">
         <a href="https://discord.gg/g5YTV7HHbh" className="ms-3">
-          <img src={discord} alt="" className="icon" />
-          <span>Discord</span>
+          <span>Chat with us</span>
+          <img src={discord} alt="Discord Icon" />
+
         </a>
-      </p>
+        <a href="https://twitter.com/PrivacyScaling" className="ms-3">
+          <span>Follow Updates</span>
+          <img src={twitter} alt="Twitter Icon" />
+
+        </a>
+      </div>
     </div>
   );
 }
