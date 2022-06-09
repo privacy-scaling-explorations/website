@@ -31,14 +31,16 @@
   {
     "name": "zkEVM",
     "image": "zkEVM.svg",
-
     "description": "A zk-rollup that can generate zk proofs for general EVM verification. This allows us to build a fully EVM-compatible zk-Rollup, which any existing Ethereum application can easily migrate to.",
     "links": [
       {
-        "website": "https://privacy-scaling-explorations.github.io/zkevm-docs/"
+        "documentation": "https://privacy-scaling-explorations.github.io/zkevm-docs/"
       },
       {
-        "github": "https://github.com/appliedzkp/zkevm-circuits"
+        "website": "https://hackmd.io/@yezhang/S1_KMMbGt"
+      },
+      {
+        "github": "https://github.com/appliedzkp/zkevm-specs"
       }
     ]
   },
@@ -110,10 +112,13 @@
     "description": "Infrastructure to make it easy for any community to run their own CLR round with clr.fund.",
     "links": [
       {
-        "website": "https://clr.fund/#/"
+        "website": "qf.ethprague.com/"
       },
       {
-        "github": "https://clrfund.gitbook.io/deployer/"
+        "documentation": "https://clrfund.gitbook.io/deployer/"
+      },
+      {
+        "github": "https://github.com/quadratic-funding/qfi"
       }
     ]
   },
