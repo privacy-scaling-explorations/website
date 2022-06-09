@@ -10,7 +10,7 @@ function Teams() {
   return (
     <div id="Team">
       <h1 className="">Members</h1>
-      <div style={{ height: '24px' }} />
+      <div style={{ height: '1.5rem' }} />
       <p>PSE is a team of 50 members, below you can find some of our team member's information.</p>
       <div className="Cards">{cards}</div>
     </div>
