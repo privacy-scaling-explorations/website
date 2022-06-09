@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1.5rem;
+  padding-inline: 3rem;
+  overflow-wrap: anywhere;
 }
 
 .hero > * {
@@ -53,4 +55,13 @@
 
 .border-dark {
   border-color: var(--gray) !important;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    margin: 1rem auto;
+    font-weight: 700;
+    font-size: 2.25rem;
+    max-width: 50rem;
+  }
 }

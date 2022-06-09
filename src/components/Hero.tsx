@@ -8,8 +8,8 @@ function Hero() {
     <div id="top" className="hero">
       <div className="intro">
         <p>Privacy & Scaling Explorations</p>
-        <h1 className="pt-3 pb-4 title">Enhancing Ethereum through cryptographic research.</h1>
-        <p className="pb-2">We facilitate the integration of ZK primitives into decentralized applications.</p>
+        <h1 className="title">Enhancing Ethereum through cryptographic research.</h1>
+        <p className="">We facilitate the integration of ZK primitives into decentralized applications.</p>
       </div>
       <div className="center">
         <div className="link">
@@ -35,7 +35,7 @@ function Hero() {
           </a>
         </div>
       </div>
-      <div className="col-md-12 arrow">
+      <div className="arrow">
         <img src={arrow} alt="" />
         <div className="fst-italic more-info" style={{ opacity: "85%", paddingTop: "1rem" }}>
           more info below
