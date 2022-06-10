@@ -36,7 +36,7 @@ function renderLink(url: string, source: string, icon: string, button: boolean =
   if (!button) {
     return (
       <div className="link" key={url}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a href={url} target="_blank">
           <img className="icon" src={icon} alt={source} />
           {text ? <div className="link-title">{source}</div> : null}
         </a>
@@ -99,28 +99,28 @@ function renderDescription(description: string | string[]): any {
 function ProjectCard(props: ProjectCardProps) {
   const docLinks = props.links
     ? props.links.map((link) => {
-        if (link.github) {
-          return renderLink(link.github, "github", github);
-        } else if (link.documentation) {
-          return renderLink(link.documentation, "website", docs);
-        } else {
-          return null;
-        }
-      })
+      if (link.github) {
+        return renderLink(link.github, "github", github);
+      } else if (link.documentation) {
+        return renderLink(link.documentation, "website", docs);
+      } else {
+        return null;
+      }
+    })
     : null;
 
   const socialLinks = props.links
     ? props.links.map((link) => {
-        if (link.discord) {
-          return renderLink(link.discord, "discord", discord);
-        } else if (link.twitter) {
-          return renderLink(link.twitter, "twitter", twitter);
-        } else if (link.telegram) {
-          return renderLink(link.telegram, "telegram", telegram);
-        } else {
-          return null;
-        }
-      })
+      if (link.discord) {
+        return renderLink(link.discord, "discord", discord);
+      } else if (link.twitter) {
+        return renderLink(link.twitter, "twitter", twitter);
+      } else if (link.telegram) {
+        return renderLink(link.telegram, "telegram", telegram);
+      } else {
+        return null;
+      }
+    })
     : null;
 
   let img = (() => {
@@ -154,7 +154,7 @@ function ProjectCard(props: ProjectCardProps) {
       for (let link in props.links) {
         if (props.links[link].website) {
           title_with_link = (
-            <a href={props.links[link].website}>
+            <a href={props.links[link].website} target="_blank">
               <div>{props.name}</div>
               <div style={{ width: "0.8125rem" }} />
               <img src={img_link} role="presentation" alt="Go to project website" />

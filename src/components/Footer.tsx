@@ -24,11 +24,11 @@ export default function Footer() {
         </div>
       </div>
       <div id="footer-links">
-        <a href="https://discord.gg/g5YTV7HHbh">
+        <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer">
           <span>Chat with us</span>
           <img src={discord} alt="Discord Icon" />
         </a>
-        <a href="https://twitter.com/PrivacyScaling">
+        <a href="https://twitter.com/PrivacyScaling" target="_blank" rel="noopener noreferrer">
           <span>Follow Updates</span>
           <img src={twitter} alt="Twitter Icon" />
         </a>
