@@ -7,12 +7,12 @@
 
 .members-card-title {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
 .card-text {
-  line-height: 125%;
+  line-height: 150%;
   padding-bottom: 1.5rem;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .team-icon {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .team-link-title {
