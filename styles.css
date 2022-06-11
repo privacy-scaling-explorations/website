@@ -359,14 +359,19 @@ img.hero-graphic {
   line-height: 1rem /* 16px */;
 }
 
+.text-sm {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
 .text-xl {
   font-size: 1.25rem /* 20px */;
   line-height: 1.75rem /* 28px */;
 }
 
 .text-3xl {
-  font-size: 1.875rem /* 30px */;
-  line-height: 2.25rem /* 36px */;
+  font-size: 2rem /* 32px */;
+  line-height: 2.5rem /* 40px */;
 }
 
 .tracking-wider {
@@ -509,8 +514,8 @@ img.hero-graphic {
   }
 
   .lg\:text-3xl {
-    font-size: 1.875rem /* 30px */;
-    line-height: 2.25rem /* 36px */;
+    font-size: 2rem /* 32px */;
+    line-height: 2.5rem /* 40px */;
   }
 
   .lg\:text-5xl {
@@ -698,7 +703,7 @@ img.hero-graphic {
   \*******************************************************************************/
 #Projects {
   padding-inline: 5rem;
-  padding-top: 6rem;
+  padding: 4rem 3rem;
 }
 
 #Projects > p {
@@ -709,7 +714,7 @@ img.hero-graphic {
 
 #Projects .Cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 2.5rem;
 }
 
@@ -727,21 +732,31 @@ img.hero-graphic {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Discord.css ***!
   \******************************************************************************/
 #call_to_action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5rem 0 4rem;
-  padding: 3.5em;
+  padding: 2rem;
   border: 2px solid var(--black);
   border-left: none;
   border-right: none;
   background-color: var(--purple);
 }
 
-.discord-text {
+/* .discord-text {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 125%;
+} */
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /*!*************************************************************************************!*\
@@ -756,12 +771,12 @@ img.hero-graphic {
 
 .members-card-title {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
 .card-text {
-  line-height: 125%;
+  line-height: 150%;
   padding-bottom: 1.5rem;
 }
 
@@ -795,7 +810,7 @@ img.hero-graphic {
 }
 
 .team-icon {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .team-link-title {
@@ -806,7 +821,8 @@ img.hero-graphic {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Team.css ***!
   \***************************************************************************/
 #Team {
-  padding-inline: 5em;
+  padding-inline: 5rem;
+  padding: 4rem 3rem;
 }
 
 #Team .Cards {
