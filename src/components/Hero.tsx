@@ -6,9 +6,7 @@ import "./Hero.css";
 const Hero = () => (
   <div className="container xl:mx-auto home-hero max-w-[1920px]">
     <div className="mx-auto px-4 md:px-16 xl:pl-18 py-12 lg:py-16 xl:py-24 flex flex-col space-y-4 lg:space-y-6 md:max-w-4xl lg:max-w-6xl">
-      <p className="uppercase text-xs lg:text-sm xl:text-base tracking-wider font-semibold">
-        Privacy & Scaling Explorations
-      </p>
+      <p className="uppercase text-sm xl:text-base tracking-wider font-semibold">Privacy & Scaling Explorations</p>
       <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:leading-[110%] font-bold">
         Enhancing Ethereum through cryptographic research.
       </h1>
