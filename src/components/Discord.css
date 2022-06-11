@@ -1,17 +1,27 @@
 #call_to_action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5rem 0 4rem;
-  padding: 3.5em;
+  padding: 2rem;
   border: 2px solid var(--black);
   border-left: none;
   border-right: none;
   background-color: var(--purple);
 }
 
-.discord-text {
+/* .discord-text {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 125%;
+} */
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
 }

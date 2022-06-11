@@ -152,14 +152,19 @@ img.hero-graphic {
   line-height: 1rem /* 16px */;
 }
 
+.text-sm {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
 .text-xl {
   font-size: 1.25rem /* 20px */;
   line-height: 1.75rem /* 28px */;
 }
 
 .text-3xl {
-  font-size: 1.875rem /* 30px */;
-  line-height: 2.25rem /* 36px */;
+  font-size: 2rem /* 32px */;
+  line-height: 2.5rem /* 40px */;
 }
 
 .tracking-wider {
@@ -302,8 +307,8 @@ img.hero-graphic {
   }
 
   .lg\:text-3xl {
-    font-size: 1.875rem /* 30px */;
-    line-height: 2.25rem /* 36px */;
+    font-size: 2rem /* 32px */;
+    line-height: 2.5rem /* 40px */;
   }
 
   .lg\:text-5xl {
