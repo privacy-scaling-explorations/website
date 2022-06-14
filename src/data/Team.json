@@ -78,5 +78,19 @@
         "url": "https://github.com/jacque006"
       }
     ]
+  },
+  {
+    "name": "Chiali",
+    "description": "All things UX & pretty designs. Unirep and other projects",
+    "links": [
+      {
+        "provider": "github",
+        "url": "https://github.com/ChialiTsai"
+      },
+      {
+        "provider": "twitter",
+        "url": "https://twitter.com/Chia_Tea"
+      }
+    ]
   }
 ]
