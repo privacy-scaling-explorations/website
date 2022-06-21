@@ -37,10 +37,10 @@
         "documentation": "https://privacy-scaling-explorations.github.io/zkevm-docs/"
       },
       {
-        "website": "https://hackmd.io/@yezhang/S1_KMMbGt"
+        "website": "https://github.com/privacy-scaling-explorations/zkevm-specs"
       },
       {
-        "github": "https://github.com/appliedzkp/zkevm-specs"
+        "github": "https://github.com/privacy-scaling-explorations/zkevm-circuits"
       }
     ]
   },
