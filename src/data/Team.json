@@ -106,5 +106,19 @@
         "url": "https://twitter.com/thefrozenfire"
       }
     ]
+  },
+  {
+    "name": "Cedoor",
+    "description": "Full stack engineer; working on Semaphore and Interep",
+    "links": [
+      {
+        "provider": "github",
+        "url": "https://github.com/cedoor"
+      },
+      {
+        "provider": "twitter",
+        "url": "https://twitter.com/cedoor_"
+      }
+    ]
   }
 ]
