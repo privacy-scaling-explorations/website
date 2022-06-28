@@ -1,5 +1,5 @@
 # Privacy and Scaling Explorations
-Main branch served at: https://projects.appliedzkp.org/
+Main branch served at: https://appliedzkp.org/
 
 This is the React re-write of the PSE website, formally just a landing page.
 
