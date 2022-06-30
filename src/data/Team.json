@@ -120,5 +120,20 @@
         "url": "https://twitter.com/cedoor_"
       }
     ]
+  },
+  {
+    "name": "Rachel",
+    "description": "Designer; working on Semaphore",
+    "links": [
+      {
+        "provider": "github",
+        "url": "https://github.com/cedoor"
+      },
+      {
+        "provider": "twitter",
+        "url": "https://twitter.com/cedoor_"
+      }
+    ]
   }
+
 ]
