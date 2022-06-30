@@ -123,15 +123,15 @@
   },
   {
     "name": "Rachel",
-    "description": "Designer; working on Semaphore",
+    "description": "Design strategy for ZK explorations",
     "links": [
       {
         "provider": "github",
-        "url": "https://github.com/cedoor"
+        "url": "https://github.com/rachelaux"
       },
       {
         "provider": "twitter",
-        "url": "https://twitter.com/cedoor_"
+        "url": "https://twitter.com/rachel_aux"
       }
     ]
   }
