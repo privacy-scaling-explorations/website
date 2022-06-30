@@ -134,6 +134,20 @@
         "url": "https://twitter.com/rachel_aux"
       }
     ]
+  },
+  {
+    "name": "Vivian",
+    "description": "Unirep Project Lead and Software Engineer",
+    "links": [
+      {
+        "provider": "github",
+        "url": "https://github.com/vivianjeng"
+      },
+      {
+        "provider": "twitter",
+        "url": "https://twitter.com/vivi4322"
+      }
+    ]
   }
 
 ]
