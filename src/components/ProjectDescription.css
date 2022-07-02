@@ -1,0 +1,55 @@
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn-close {
+  color: #fff;
+  float: right;
+  background-color: red;
+}
+
+.btn-ext {
+  color: black;
+  font-weight: 600;
+  background-color: rgb(214, 214, 214);
+  margin-top: 1em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;  /* stacks the left and right headers above the bottom content */
+}
+
+h3 {
+  float: left;
+}
+
+.modal-desc {
+  margin-top: 1em;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
