@@ -181,13 +181,16 @@
   {
     "name": "Trusted Setup",
     "image": "trust-setup.svg",
-    "description": "Open source infrastructure for running a trusted setup ceremony in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs.",
+    "description": "Open source infrastructure for running a trusted setup ceremony in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs. MPC Phase2 Suite: All-in-one suite of tools for conducting Phase 2 Trusted Setup ceremonies for multiple and large Groth-16 SNARKs circuits.",
     "links": [
       {
         "github": "https://github.com/privacy-scaling-explorations/perpetualpowersoftau"
       },
       {
         "github": "https://github.com/zkparty/setup-mpc-ui"
+      },
+      {
+        "github": "https://github.com/quadratic-funding/mpc-phase2-suite"
       }
     ]
   },
