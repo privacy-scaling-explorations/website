@@ -626,8 +626,25 @@ img.hero-graphic {
   max-height: 150px;
 }
 
+.project-description {
+  overflow: hidden;
+  height: 4.5em; /* exactly three lines */
+  position: relative;
+}
+
+.project-description::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+
 .card-text-project {
-  line-height: 150%;
+  line-height: 1.5rem;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -702,59 +719,84 @@ img.hero-graphic {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/ProjectDescription.css ***!
   \*****************************************************************************************/
 .btn {
-  border: none;
   display: inline-block;
   padding: 10px 10px;
   font-size: 15px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  outline: none;
-  border: none;
-  border-radius: 15px;
+  border: var(--border);
+  border-radius: 2em;
 }
 
 .btn-close {
-  color: #fff;
+  color: var(--black);
+  padding: 0;
   float: right;
-  background-color: red;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-close::after {
+  content: "×";
+  font-size: 1.5rem;
 }
 
 .btn-ext {
-  color: black;
+  color: var(--black);
   font-weight: 600;
-  background-color: rgb(214, 214, 214);
+  background-color: var(--white);
   margin-top: 1em;
 }
 
 .column {
   display: flex;
-  flex-direction: column;  /* stacks the left and right headers above the bottom content */
+  flex-direction: column; /* stacks the left and right headers above the bottom content */
 }
 
 h3 {
   float: left;
+  font-size: 1.5rem;
 }
 
-.modal-desc {
+.modal-description {
   margin-top: 1em;
 }
 
+.ReactModal__Content {
+  inset: 25% 33% !important;
+  border: var(--border) !important;
+  border-radius: var(--border-radius) !important;
+}
+
 .ReactModal__Overlay {
+  background-color: var(--gray-transparent);
   opacity: 0;
   transition: 300ms ease-in-out;
 }
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
   opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
   opacity: 0;
 }
 
 .ReactModal__Body--open {
   overflow: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+  .ReactModal__Content {
+    inset: 20% 25% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ReactModal__Content {
+    inset: 20% 10% !important;
+  }
 }
 
 /*!*******************************************************************************!*\
