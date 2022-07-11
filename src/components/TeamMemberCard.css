@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-transparent);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
 }
 
 .members-card-title {
