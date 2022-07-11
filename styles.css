@@ -866,7 +866,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-transparent);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
 }
 
 .members-card-title {
@@ -928,7 +933,8 @@ h3 {
 #Team .Cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 2rem;
+  gap: 1rem 2rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 800px) {
