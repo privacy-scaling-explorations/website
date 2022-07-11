@@ -215,13 +215,7 @@
     "image": "zk-keeper.svg",
     "links": [
       {
-        "website": "#"
-      },
-      {
-        "github": "#"
-      },
-      {
-        "discord": "#"
+        "github": "https://github.com/faa/zk-keeper"
       }
     ]
   }
