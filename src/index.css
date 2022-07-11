@@ -37,9 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background: var(--background);
+  background-color: var(--background);
   background-attachment: fixed;
-  height: 100vh;
   font-family: "Inter", sans-serif;
 }
 
