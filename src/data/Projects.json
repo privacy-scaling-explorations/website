@@ -45,9 +45,9 @@
     ]
   },
   {
-    "name": "MACI (Minimal Anti-Collusion Infrastructure)",
+    "name": "MACI",
     "image": "MACI.svg",
-    "description": "MACI uses zero knowledge proofs for collusion resistance in blockchain voting (such as quadratic funding mechanisms) by making it impossible for anyone other than the vote coordinator to verify how a specific user voted. MACI also ensures correct execution of the votes, allowing anyone to verify the results.",
+    "description": "MACI (Minimal Anti-Collusion Infrastructure) uses zero knowledge proofs for collusion resistance in blockchain voting (such as quadratic funding mechanisms) by making it impossible for anyone other than the vote coordinator to verify how a specific user voted. MACI also ensures correct execution of the votes, allowing anyone to verify the results.",
     "links": [
       {
         "website": ""
@@ -181,8 +181,7 @@
   {
     "name": "Trusted Setup",
     "image": "trust-setup.svg",
-    "description": "Open source infrastructure for running a trusted setup ceremony",
-    "long_description": "in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs. MPC Phase2 Suite: All-in-one suite of tools for conducting Phase 2 Trusted Setup ceremonies for multiple and large Groth-16 SNARKs circuits.",
+    "description": "Open source infrastructure for running a trusted setup ceremony in which many people participate in generating entropy which will secure a cryptographic protocol. Perpetual Powers of Tau: A universal ceremony for the initial phase of a trusted setup. MPC Phase 2 UI: UI for a CLI or browser-based ceremony for the second, circuit-specific phase for Groth-16 SNARKs. MPC Phase2 Suite: All-in-one suite of tools for conducting Phase 2 Trusted Setup ceremonies for multiple and large Groth-16 SNARKs circuits.",
     "links": [
       {
         "github": "https://github.com/privacy-scaling-explorations/perpetualpowersoftau"
@@ -209,6 +208,17 @@
       },
       {
         "discord": "https://discord.gg/9XwESXtcN7"
+      }
+    ]
+  },
+  {
+    "name": "ZK-Keeper",
+    "short_name": "ZK-Keeper",
+    "description": "text",
+    "image": "zk-keeper.svg",
+    "links": [
+      {
+        "github": "https://github.com/faa/zk-keeper"
       }
     ]
   }

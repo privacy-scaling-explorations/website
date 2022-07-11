@@ -148,6 +148,19 @@
         "url": "https://twitter.com/vivi4322"
       }
     ]
+  },
+  {
+    "name": "0xjei",
+    "description": "Software Engineer; working on MACI/QFI and Trusted Setup",
+    "links": [
+      {
+        "provider": "github",
+        "url": "https://github.com/0xjei"
+      },
+      {
+        "provider": "twitter",
+        "url": "https://twitter.com/0xjei"
+      }
+    ]
   }
-
 ]

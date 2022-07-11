@@ -175,9 +175,9 @@ function ProjectCard(props: ProjectCardProps) {
       {img}
       <div className="card-body">
         <div className="card-title">{title(props)}</div>
-        {renderDescription(props.description)}
+        <div className="project-description">{renderDescription(props.description)}</div>
       </div>
-      <ProjectDescription title={title(props)} long_description={props.long_description}></ProjectDescription>
+      <ProjectDescription title={props.name} description={props.description}></ProjectDescription>
       <div className="card-footer">
         <div className="docs-links">{docLinks}</div>
         <div className="social-links">{socialLinks}</div>
