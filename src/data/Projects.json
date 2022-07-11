@@ -208,5 +208,22 @@
         "discord": "https://discord.gg/9XwESXtcN7"
       }
     ]
+  },
+  {
+    "name": "ZK-Keeper",
+    "short_name": "ZK-Keeper",
+    "description": "text",
+    "image": "zk-keeper.svg",
+    "links": [
+      {
+        "website": "#"
+      },
+      {
+        "github": "#"
+      },
+      {
+        "discord": "#"
+      }
+    ]
   }
 ]
