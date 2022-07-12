@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from '../images/pse-logo.svg';
 import discord from '../images/discord_round.svg';
 import twitter from '../images/twitter_round.svg';
+import medium from '../images/medium-circle.svg';
 import './Navbar.css'
 
 function Navbar() {
@@ -29,6 +30,9 @@ function Navbar() {
           </a>
           <a href="https://discord.gg/g5YTV7HHbh" aria-label="PSE Discord link" target="_blank" rel="noopener noreferrer">
             <img src={discord} alt="" />
+          </a>
+          <a href="https://medium.com/privacy-scaling-explorations" aria-label="PSE medium" target="_blank" rel="noopener noreferrer">
+            <img src={medium} alt="" />
           </a>
         </div>
         <div id="menu-link" onClick={() => { toggleMenu() }}>{isOpen ? 'Close' : 'Menu'}</div>

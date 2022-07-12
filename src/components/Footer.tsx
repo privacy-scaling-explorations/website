@@ -2,6 +2,7 @@ import "./Footer.css";
 import logo from '../images/pse-logo.svg';
 import discord from "../images/discord_round.svg";
 import twitter from "../images/twitter_round.svg";
+import medium from '../images/medium-circle.svg';
 
 function copyright() {
   let websiteCreationYear = 2022;
@@ -31,6 +32,10 @@ export default function Footer() {
         <a href="https://twitter.com/PrivacyScaling" target="_blank" rel="noopener noreferrer">
           <span>Follow Updates</span>
           <img src={twitter} alt="Twitter Icon" />
+        </a>
+        <a href="https://medium.com/privacy-scaling-explorations" target="_blank" rel="noopener noreferrer">
+          <span>Our Articles</span>
+          <img src={medium} alt="Medium Icon" />
         </a>
       </div>
     </footer>

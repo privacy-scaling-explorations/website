@@ -215,7 +215,7 @@
     "name": "ZK-Keeper",
     "short_name": "ZK-Keeper",
     "description": "ZK-Keeper is a browser plugin which enables Zero knowledge identity management and proof generation",
-    "image": "zk-keeper.svg",
+    "image": "zk-keeper.png",
     "links": [
       {
         "github": "https://github.com/faa/zk-keeper"
