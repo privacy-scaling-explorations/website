@@ -7,6 +7,7 @@ import img_link from "../images/box_arrow_out.svg";
 import "./ProjectCard.css";
 import ColorHash from "color-hash";
 import { title } from "process";
+import ProjectDescription from "./ProjectDescription";
 
 export interface ProjectCardProps {
   name: string;
@@ -174,8 +175,9 @@ function ProjectCard(props: ProjectCardProps) {
       {img}
       <div className="card-body">
         <div className="card-title">{title(props)}</div>
-        {renderDescription(props.description)}
+        <div className="project-description">{renderDescription(props.description)}</div>
       </div>
+      <ProjectDescription title={props.name} description={props.description}></ProjectDescription>
       <div className="card-footer">
         <div className="docs-links">{docLinks}</div>
         <div className="social-links">{socialLinks}</div>

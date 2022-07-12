@@ -15,8 +15,25 @@
   max-height: 150px;
 }
 
+.project-description {
+  overflow: hidden;
+  height: 4.5em; /* exactly three lines */
+  position: relative;
+}
+
+.project-description::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+
 .card-text-project {
-  line-height: 150%;
+  line-height: 1.5rem;
   font-weight: 400;
   font-size: 1rem;
 }
