@@ -10,7 +10,7 @@ function Teams() {
     <div id="Team">
       <h2 className="">Members</h2>
       <div style={{ height: "1.5rem" }} />
-      <p>PSE is a team of 50 members, below you can find some of our team member's information.</p>
+      <p>PSE has contributors of all kinds - we are developers, designers, engineers, researchers, communicators, organizers and much more. Meet some of our team members below!</p>
       <div className="Cards">{cards}</div>
     </div>
   );
