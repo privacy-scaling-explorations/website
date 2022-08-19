@@ -94,20 +94,6 @@
     ]
   },
   {
-    "name": "Justin Martin",
-    "description": "Zero knowledge sorting hat. Making opportunities for smart people to advance ZK and privacy",
-    "links": [
-      {
-        "provider": "github",
-        "url": "https://github.com/TheFrozenFire"
-      },
-      {
-        "provider": "twitter",
-        "url": "https://twitter.com/thefrozenfire"
-      }
-    ]
-  },
-  {
     "name": "Cedoor",
     "description": "Full stack engineer; working on Semaphore and Interep",
     "links": [
