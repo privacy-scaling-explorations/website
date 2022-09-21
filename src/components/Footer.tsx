@@ -2,7 +2,7 @@ import "./Footer.css";
 import logo from '../images/pse-logo.svg';
 import discord from "../images/discord_round.svg";
 import twitter from "../images/twitter_round.svg";
-import medium from '../images/medium-circle.svg';
+import mirror from '../images/mirror.svg';
 
 function copyright() {
   let websiteCreationYear = 2022;
@@ -33,9 +33,9 @@ export default function Footer() {
           <span>Follow Updates</span>
           <img src={twitter} alt="Twitter Icon" />
         </a>
-        <a href="https://medium.com/privacy-scaling-explorations" target="_blank" rel="noopener noreferrer">
+        <a href="https://mirror.xyz/privacy-scaling-explorations.eth" target="_blank" rel="noopener noreferrer">
           <span>Our Articles</span>
-          <img src={medium} alt="Medium Icon" />
+          <img src={mirror} alt="Mirror Icon" />
         </a>
       </div>
     </footer>
