@@ -2,7 +2,7 @@ import { useState } from 'react';
 import logo from '../images/pse-logo.svg';
 import discord from '../images/discord_round.svg';
 import twitter from '../images/twitter_round.svg';
-import mirror from '../images/mirror.svg';
+import mirror from '../images/Mirror.svg';
 import './Navbar.css'
 
 function Navbar() {
