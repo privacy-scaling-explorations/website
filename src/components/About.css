@@ -1,0 +1,10 @@
+#About {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+}
+
+#About .container {
+  text-align: center;
+  max-width: 600px;
+}

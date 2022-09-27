@@ -50,6 +50,10 @@ footer {
   max-width: 40px;
 }
 
+#footer-links .cta {
+  color: var(--brown);
+}
+
 @media screen and (max-width: 800px) {
   footer {
     margin: 1em 0em;

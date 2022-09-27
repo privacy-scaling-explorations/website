@@ -1,0 +1,21 @@
+#How {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-block: 12px;
+  padding: 100px;
+}
+
+#How .body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+#How .diagram-container {
+  padding: 10px;
+}
+
+#How .diagram {
+  display: flex;
+}

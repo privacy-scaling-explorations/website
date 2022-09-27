@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import logo from '../images/pse-logo.svg';
+import logo from '../images/tlsn-logo.svg';
 import discord from '../images/discord_round.svg';
-import twitter from '../images/twitter_round.svg';
-import medium from '../images/medium-circle.svg';
+import github from "../images/github.svg";
 import './Navbar.css'
+import config from "../config.json";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,25 +15,21 @@ function Navbar() {
   return (
     <nav id="nav-menu">
       <nav id="navbar" aria-label="Navigation for Desktop">
-        <div id="anchor-links" className="nav-links">
-          <a href="#top">About</a>
-          <a href="#Projects">Projects</a>
-          <a href="#Team">Members</a>
-        </div>
-        <a href="#" id="pse-link">
-          <img src={logo} alt="pse logo" />
+        <a href="#" id="tlsn-link">
+          <img src={logo} alt="tlsn logo" />
         </a>
+        <div id="anchor-links" className="nav-links">
+          <a href={config.links.docs}>Docs</a>
+          <a href="#Roadmap">Roadmap</a>
+          <a href="#About">About</a>
+        </div>
         <div id="social-links" className="nav-links">
-          <a id="job-openings" href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations" target="_blank" rel="noopener noreferrer">Job Openings</a>
-          <a href="https://twitter.com/PrivacyScaling" aria-label="PSE Twitter link" target="_blank" rel="noopener noreferrer">
-            <img src={twitter} alt="" />
-          </a>
-          <a href="https://discord.gg/g5YTV7HHbh" aria-label="PSE Discord link" target="_blank" rel="noopener noreferrer">
-            <img src={discord} alt="" />
-          </a>
-          <a href="https://medium.com/privacy-scaling-explorations" aria-label="PSE medium" target="_blank" rel="noopener noreferrer">
-            <img src={medium} alt="" />
-          </a>
+            <a href={config.links.discord} aria-label="TLSNotary Discord link" target="_blank" rel="noopener noreferrer">
+              <img src={discord} alt="TLSNotary Discord" />
+            </a>
+            <a href={config.links.repo} aria-label="TLSNotary Github Repo">
+              <img src={github} alt="Github" />
+            </a>
         </div>
         <div id="menu-link" onClick={() => { toggleMenu() }}>{isOpen ? 'Close' : 'Menu'}</div>
       </nav>
@@ -41,7 +37,6 @@ function Navbar() {
         <a href="#top">About</a>
         <a href="#Projects">Projects</a>
         <a href="#Team">Members</a>
-        <a id="job-openings-mobile" href="https://jobs.lever.co/ethereumfoundation/?department=Ethereum%20Foundation&team=Privacy%20and%20Scaling%20Explorations" target="_blank" rel="noopener noreferrer">Job Openings</a>
       </nav>
     </nav>
   )

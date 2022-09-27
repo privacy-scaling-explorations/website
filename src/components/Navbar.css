@@ -2,10 +2,10 @@
   border-bottom: var(--border);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-areas: "anchor-links pse-link social-links";
+  grid-template-areas: "tlsn-link anchor-links social-links";
   font-weight: 600;
   font-size: 1.125rem;
-  padding-block: 36px;
+  padding-block: 12px;
 }
 
 #navbar > * {
@@ -36,8 +36,8 @@
   grid-area: anchor-links;
 }
 
-#pse-link {
-  grid-area: pse-link;
+#tlsn-link {
+  grid-area: tlsn-link;
 }
 
 #social-links {
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 800px) {
   #navbar {
-    grid-template-areas: "social-links pse-link menu-link";
+    grid-template-areas: "tlsn-link social-links menu-link";
     padding-inline: 1em;
     border-bottom: none;
     padding-block: 16px;

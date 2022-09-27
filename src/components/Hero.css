@@ -8,6 +8,10 @@ img.hero-graphic {
   object-fit: contain;
 }
 
+#Hero .name {
+  color: var(--brown);
+}
+
 .border-2 {
   border-width: 2px;
 }
