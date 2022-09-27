@@ -10,7 +10,7 @@ module.exports = {
   mode: "development",
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "/landing-page/",
+    publicPath: "/",
   },
   resolve: {
     extensions: ["*", ".js", ".jsx", ".ts", ".tsx", ".json"],
