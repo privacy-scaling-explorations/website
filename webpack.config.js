@@ -46,6 +46,7 @@ module.exports = {
       template: "public/index.html",
       filename: "index.html",
       inlineSource: ".(js|css)",
+      publicPath: "/landing-page/", // <--- This is only for github pages without a custom domain, remove this line if you have a custom domain
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",
