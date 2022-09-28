@@ -4,7 +4,7 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
   border-top: 2px solid var(--gray);
-  margin: 6.5rem 5em 1rem;
+  margin: 0rem 5em 1rem;
   padding-block: 2.4rem;
 }
 

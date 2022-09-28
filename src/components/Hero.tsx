@@ -1,4 +1,5 @@
 import github from "../images/github.svg";
+import docs from "../images/docs.svg";
 import "./Hero.css";
 import config from "../config.json";
 
@@ -8,18 +9,28 @@ const Hero = () => (
     <h1>
       Proof of data authenticity
     </h1>
+    <div style={{ height: "1.375rem" }} />
     <p>
       Export data from any web application and prove facts about it without compromising on privacy.
     </p>
-    <div className="flex space-x-2">
-      <a href="https://tlsnotary.github.io/docs-mdbook/">
-        <button className="pill-button">
-          <p>View Documentation</p>
-        </button>
-      </a>
-      <a href={config.links.repo}>
-        <img src={github} alt="github"></img>
-      </a>
+    <div style={{ height: "1.375rem" }} />
+    <div className="links">
+      <div className="docs-link">
+        <a href={config.links.docs}>
+          <button className="pill-button">
+            Documentation
+            <img className="button-docs" src={docs} alt="docs"></img>
+          </button>
+        </a>
+      </div>
+      <div className="repo-link">
+        <a href={config.links.repo}>
+          <button className="pill-button">
+            Source
+            <img className="button-github" src={github} alt="github"></img>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 );

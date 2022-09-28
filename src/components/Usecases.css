@@ -25,6 +25,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+  align-items: center;
 }
 
 #Usecases .card {
@@ -77,8 +78,11 @@
     align-self: stretch; */
 }
 
-@media screen and (max-width: 800px) {
-  #Usecases {
-    padding-inline: 1rem;
+@media only screen and (max-width: 600px) {
+  #Usecases .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
 }

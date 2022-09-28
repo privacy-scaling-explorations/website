@@ -20,7 +20,7 @@ function Navbar() {
         </a>
         <div id="anchor-links" className="nav-links">
           <a href={config.links.docs}>Docs</a>
-          <a href="#Roadmap">Roadmap</a>
+          <a href="#Pagesigner">PageSigner</a>
           <a href="#About">About</a>
         </div>
         <div id="social-links" className="nav-links">
@@ -34,9 +34,9 @@ function Navbar() {
         <div id="menu-link" onClick={() => { toggleMenu() }}>{isOpen ? 'Close' : 'Menu'}</div>
       </nav>
       <nav id="nav-menu-mobile" aria-label="Navigation for Mobile" className={isOpen ? 'menu-open' : 'menu-closed'}>
-        <a href="#top">About</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Team">Members</a>
+        <a href={config.links.docs}>Docs</a>
+        <a href="#Pagesigner">PageSigner</a>
+        <a href="#About">About</a>
       </nav>
     </nav>
   )

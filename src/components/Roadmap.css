@@ -62,3 +62,12 @@
       border-top: 2px solid var(--gray);
       align-self: stretch; */
 }
+
+@media only screen and (max-width: 600px) {
+  #Roadmap .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}

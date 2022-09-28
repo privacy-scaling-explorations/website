@@ -8,7 +8,7 @@ export default function How() {
             <div className="diagram-container">
                 <img className="diagram" src={diagram}></img>
             </div>
-            <div>
+            <div className="text-container">
                 <h2>How it works</h2>
                 <div style={{ height: "1.375rem" }} />
                 <p>
@@ -18,7 +18,8 @@ export default function How() {
                 At the core of the TLSNotary protocol is dividing TLS session keys between two parties (Client and Notary) and then using secure two-party computation (2PC) to encrypt and authenticate requests from the Client to a TLS-enabled webserver.
                 <br/>
                 <br/>
-                During the protocol neither the Client nor Notary are in posession of the full TLS session keys, they only know their shares of those keys. This preserves the security assumptions of TLS while at the same time allowing the Client to prove to the Notary the authenticity of the transcript.
+                During the protocol neither the Client nor Notary are in posession of the full TLS session keys, they only know their shares of those keys.
+                This preserves the security assumptions of TLS while at the same time allows the Client to prove to the Notary the authenticity of the transcript.
                 <br/>
                 <br/>
                 This is all achieved with full privacy. The Notary is never aware of which webserver is being queried, nor do they ever see the unencrypted communications.

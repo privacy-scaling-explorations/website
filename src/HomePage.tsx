@@ -5,6 +5,7 @@ import Usecases from './components/Usecases';
 import About from './components/About';
 import Footer from './components/Footer';
 import How from './components/How';
+import Pagesigner from './components/Pagesigner';
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
         <Usecases />
         <How />
         <Roadmap />
+        <Pagesigner />
         <About />
       </main>
       <Footer />

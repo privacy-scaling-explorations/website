@@ -2,20 +2,50 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-block: 12px;
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #How .body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 2.5rem;
-}
-
-#How .diagram-container {
-  padding: 10px;
+  align-items: center;
 }
 
 #How .diagram {
+  padding: 30px;
+}
+
+#How .diagram-container {
   display: flex;
+  border: 5px solid var(--brown);
+  border-radius: 30px;
+  justify-content: center;
+}
+
+#How .text-container {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1440px) {
+  #How {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #How .body {
+    flex-direction: column;
+    position: static;
+    max-width: 67%;
+  }
+
+  #How .diagram {
+    max-width: 80%;
+    padding: 30px;
+  }
 }
