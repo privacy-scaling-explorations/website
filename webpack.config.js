@@ -25,7 +25,7 @@ module.exports = {
         test: /\.(png|svg|jpg|gif|ico)$/,
         loader: "file-loader",
         options: {
-          // publicPath: 'build',
+          publicPath: './',
           esModule: false,
         },
       },
@@ -46,7 +46,7 @@ module.exports = {
       template: "public/index.html",
       filename: "index.html",
       inlineSource: ".(js|css)",
-      publicPath: "/landing-page/", // <--- This is only for github pages without a custom domain, remove this line if you have a custom domain
+      publicPath: "./",
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",

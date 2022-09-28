@@ -24,7 +24,7 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         loader: 'file-loader',
         options: {
-          // publicPath: 'build',
+          publicPath: './',
           esModule: false,
         }
       },
