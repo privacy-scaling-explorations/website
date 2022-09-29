@@ -24,15 +24,11 @@
 #Usecases .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2.5rem;
-  align-items: center;
 }
 
 #Usecases .card {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-start;
   border-radius: var(--border-radius);
   background: var(--light-blue);
   padding: 1.2rem;
@@ -45,37 +41,8 @@
   font-size: 1rem;
 }
 
-#Usecases .card-title {
-  display: flex;
-}
-
-#Usecases .card-title > div,
-#Usecases .card-title > a > div {
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding-block: 1.5rem;
-}
-
-#Usecases .card-title > a > * {
-  display: inline-flex;
-}
-
 #Usecases .card-body {
   align-self: flex-start;
-  flex: 1;
-}
-
-#Usecases .card-footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid #9ea3a7;
-  padding-top: 1rem;
-  margin-top: 2.5rem;
-  /* flex-wrap: wrap;
-    background-color: transparent;
-    padding: 1em 0em;
-    border-top: 2px solid var(--gray);
-    align-self: stretch; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -83,6 +50,5 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
   }
 }

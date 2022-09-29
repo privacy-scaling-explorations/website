@@ -8,28 +8,38 @@ export default function Usecases() {
         <div style={{ height: "1.375rem" }} />
         <p>
             With TLSNotary, you can create cryptographic proofs of authenticity for any data on the web, even your private data.
-            Using our protocol you can securely:
+            Using our protocol you can securely prove:
         </p>
         <div style={{ height: "1.375rem" }} />
         <div className="cards">
             <div className="card border">
                 <div className="card-body">
-                    <div className="card-text">Prove private information about yourself is stored on a platform.</div>
+                    <div className="card-text">Private information about yourself.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
-                    <div className="card-text">Prove you received a private message from someone.</div>
+                    <div className="card-text">You received a private message from someone.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
-                    <div className="card-text">Prove you received a money transfer.</div>
+                    <div className="card-text">You received a money transfer.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
-                    <div className="card-text">Create a provable snapshot of a webpage.</div>
+                    <div className="card-text">A snapshot of a webpage.</div>
+                </div>
+            </div>
+            <div className="card border">
+                <div className="card-body">
+                    <div className="card-text">You were blocked from using an app.</div>
+                </div>
+            </div>
+            <div className="card border">
+                <div className="card-body">
+                    <div className="card-text">You have access to an account.</div>
                 </div>
             </div>
         </div>
