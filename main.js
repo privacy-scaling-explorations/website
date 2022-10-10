@@ -890,7 +890,7 @@ eval("module.exports = __webpack_require__.p + \"7d330afc2a719dbca4ecca94548b2d3
   \*******************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"de5542655fd30b80a1d2031face7b955.svg\";\n\n//# sourceURL=webpack://pse-landingpage/./src/images/unirep.svg?");
+eval("module.exports = __webpack_require__.p + \"cd7a90aed7b04b73cc8b6c97395169a9.svg\";\n\n//# sourceURL=webpack://pse-landingpage/./src/images/unirep.svg?");
 
 /***/ }),
 
