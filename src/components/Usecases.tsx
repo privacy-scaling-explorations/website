@@ -1,4 +1,12 @@
 import "./Usecases.css";
+import prove from "../images/img-proveyouself.svg";
+import msg from "../images/img-bear.svg";
+import money from "../images/img-elephant-love.svg";
+import webpage from "../images/img-elephant-reading.svg";
+import block from "../images/img-block-to-app.svg";
+import account from "../images/img-bear-access.svg";
+
+
 
 export default function Usecases() {
   return (
@@ -14,31 +22,37 @@ export default function Usecases() {
         <div className="cards">
             <div className="card border">
                 <div className="card-body">
+                    <div className="card-image"><img className="card-image" src={prove} alt="verify"></img></div>             
                     <div className="card-text">Private information about yourself.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
+                    <div className="card-image"><img className="card-image" src={msg} alt="verify"></img></div>  
                     <div className="card-text">You received a private message from someone.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
+                    <div className="card-image"><img className="card-image" src={money} alt="verify"></img></div>  
                     <div className="card-text">You received a money transfer.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
+                    <div className="card-image"><img className="card-image" src={webpage} alt="verify"></img></div>  
                     <div className="card-text">A snapshot of a webpage.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
+                    <div className="card-image"><img className="card-image" src={block} alt="verify"></img></div>  
                     <div className="card-text">You were blocked from using an app.</div>
                 </div>
             </div>
             <div className="card border">
                 <div className="card-body">
+                    <div className="card-image"><img className="card-image" src={account} alt="verify"></img></div>  
                     <div className="card-text">You have access to an account.</div>
                 </div>
             </div>
