@@ -40,6 +40,12 @@
   font-weight: 600;
   font-size: 1rem;
 }
+.card-image {
+  display:block;
+  margin:auto;
+  width:100%;
+  height:auto;
+}
 
 #Usecases .card-body {
   align-self: flex-start;
