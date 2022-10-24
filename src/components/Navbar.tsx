@@ -32,7 +32,7 @@ function Navbar() {
             <img src={discord} alt="" />
           </a>
           <a href="https://mirror.xyz/privacy-scaling-explorations.eth" aria-label="PSE Mirror" target="_blank" rel="noopener noreferrer">
-            <img src={mirror} alt="" />
+            <img src={mirror} alt="" width="40px" height="40px"/>
           </a>
         </div>
         <div id="menu-link" onClick={() => { toggleMenu() }}>{isOpen ? 'Close' : 'Menu'}</div>
