@@ -19,8 +19,8 @@ jobs:
     steps:
       - name: Checkout 🛒
         uses: actions/checkout@v3
-        with: 
-          node-version: 16
+        with:
+          node-version: 16.x
 
       - name: Install and Build
         run: |
