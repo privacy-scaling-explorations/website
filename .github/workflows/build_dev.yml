@@ -13,7 +13,7 @@ on:
 
 jobs:
   build-and-deploy-dev:
-    permissions: 
+    permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout 🛒
         uses: actions/checkout@v3
+        with:
+          node-version: 16
 
       - name: Install and Build
         run: |
@@ -30,7 +32,7 @@ jobs:
 
       - name: Deploy to gh-pages-dev branch
         uses: JamesIves/github-pages-deploy-action@v4.3.3
-        
+
         with:
           branch: gh-pages-dev
           folder: build
