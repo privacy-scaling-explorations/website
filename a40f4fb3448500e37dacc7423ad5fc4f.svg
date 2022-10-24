@@ -1,0 +1,12 @@
+<svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+	<style type="text/css">
+		.st1 {
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			fill: #151616;
+		}
+	</style>
+	<path d="M20,0L20,0c11,0,20,9,20,20l0,0c0,11-9,20-20,20l0,0C9,40,0,31,0,20l0,0C0,9,9,0,20,0z" />
+	<path class="st1" d="M20,40c11,0,20-9,20-20S31,0,20,0S0,9,0,20S9,40,20,40z M20.2,10c-4.5,0-8.2,3.7-8.2,8.2v11.4
+			c0,0.2,0.2,0.4,0.4,0.4h15.5c0.2,0,0.4-0.2,0.4-0.4V18.2C28.4,13.7,24.7,10,20.2,10z" />
+</svg>
