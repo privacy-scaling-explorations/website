@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
       </div>
       <div id="footer-links">
-        <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/sF5CT5rzrR" target="_blank" rel="noopener noreferrer">
           <span>Chat with us</span>
           <img src={discord} alt="Discord Icon" />
         </a>

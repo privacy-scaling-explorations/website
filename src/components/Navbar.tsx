@@ -28,7 +28,7 @@ function Navbar() {
           <a href="https://twitter.com/PrivacyScaling" aria-label="PSE Twitter link" target="_blank" rel="noopener noreferrer">
             <img src={twitter} alt="" />
           </a>
-          <a href="https://discord.gg/g5YTV7HHbh" aria-label="PSE Discord link" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.gg/sF5CT5rzrR" aria-label="PSE Discord link" target="_blank" rel="noopener noreferrer">
             <img src={discord} alt="" />
           </a>
           <a href="https://mirror.xyz/privacy-scaling-explorations.eth" aria-label="PSE Mirror" target="_blank" rel="noopener noreferrer">

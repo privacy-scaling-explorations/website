@@ -7,7 +7,7 @@ function Discord() {
     <div id="call_to_action">
       <div className="cta">
         <div className="discord-text text-2xl lg:text-3xl font-semibold">Join our conversation on Discord!</div>
-        <a href="https://discord.gg/g5YTV7HHbh" target="_blank" rel="noopener noreferrer" aria-label="PSE Discord link">
+        <a href="https://discord.gg/sF5CT5rzrR" target="_blank" rel="noopener noreferrer" aria-label="PSE Discord link">
           <img style={{ width: "4rem" }} src={discord} alt="" />
         </a>
       </div>
