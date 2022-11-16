@@ -214,7 +214,7 @@
   {
     "name": "Crypt-Keeper",
     "short_name": "Crypt-Keeper",
-    "description": "Crypt-Keeper a Zero knowledge identity management and proof generation",
+    "description": "Crypt-Keeper is a Zero knowledge identity management and proof generation",
     "image": "zk-keeper.png",
     "links": [
       {
