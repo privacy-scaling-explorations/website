@@ -212,9 +212,9 @@
     ]
   },
   {
-    "name": "Crypt-Keeper Extension",
-    "short_name": "Crypt-Keeper Extension",
-    "description": "Crypt-Keeper is a browser plugin which enables Zero knowledge identity management and proof generation",
+    "name": "Crypt-Keeper",
+    "short_name": "Crypt-Keeper",
+    "description": "Crypt-Keeper a Zero knowledge identity management and proof generation",
     "image": "zk-keeper.png",
     "links": [
       {
