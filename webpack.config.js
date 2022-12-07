@@ -52,7 +52,10 @@ module.exports = {
       filename: "styles.css",
     }),
     new CopyPlugin({
-      patterns: [{ from: "./public/manifest.json", to: "manifest.json" }],
+      patterns: [
+        { from: "./public/manifest.json", to: "manifest.json" },
+        { from: "./public/*.pdf", to: "[name][ext]" }
+      ],
     }),
     // new HtmlWebpackInlineSourcePlugin(),
   ],
