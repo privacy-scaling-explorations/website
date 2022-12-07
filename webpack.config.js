@@ -53,8 +53,15 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./public/manifest.json", to: "manifest.json" },
-        { from: "./public/*.pdf", to: "[name][ext]" }
+        {
+          from: "./public/manifest.json",
+          to: "manifest.json"
+        },
+        {
+          from: "./public/*.pdf",
+          to: "[name][ext]",
+          noErrorOnMissing: true
+        }
       ],
     }),
     // new HtmlWebpackInlineSourcePlugin(),
