@@ -221,5 +221,16 @@
         "github": "https://github.com/privacy-scaling-explorations/crypt-keeper-extension"
       }
     ]
+  },
+  {
+    "name": "ZK-Groups",
+    "short_name": "ZK-Groups",
+    "description": "A user group management system offering privacy-preserving membership proving and Single Sign-On service.",
+    "image": "tlsn.png",
+    "links": [
+      {
+        "github": "https://github.com/privacy-scaling-explorations/zk-groups"
+      }
+    ]
   }
 ]
