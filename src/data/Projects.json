@@ -217,10 +217,10 @@
     ]
   },
   {
-    "name": "ZK-Groups",
-    "short_name": "ZK-Groups",
+    "name": "Bandada",
+    "short_name": "Bandada",
     "description": "An open-source system for managing privacy-preserving groups.",
-    "image": "zkgroups.svg",
+    "image": "bandada.svg",
     "links": [
       {
         "github": "https://github.com/privacy-scaling-explorations/zk-groups"
