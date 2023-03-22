@@ -122,6 +122,20 @@
     ]
   },
   {
+    "name": "Andy",
+    "description": "Product owner; working on Semaphore and other projects",
+    "links": [
+      {
+        "provider": "github",
+        "url": "https://github.com/aguzmant103"
+      },
+      {
+        "provider": "twitter",
+        "url": "https://twitter.com/AndyGuzmanEth"
+      }
+    ]
+  },
+  {
     "name": "Vivian",
     "description": "Unirep Project Lead and Software Engineer",
     "links": [

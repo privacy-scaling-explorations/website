@@ -217,10 +217,10 @@
     ]
   },
   {
-    "name": "ZK-Groups",
-    "short_name": "ZK-Groups",
-    "description": "A user group management system offering privacy-preserving membership proving and Single Sign-On service.",
-    "image": "zkgroups.svg",
+    "name": "Bandada",
+    "short_name": "Bandada",
+    "description": "An open-source system for managing privacy-preserving groups.",
+    "image": "bandada.svg",
     "links": [
       {
         "github": "https://github.com/privacy-scaling-explorations/zk-groups"
