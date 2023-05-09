@@ -16,12 +16,12 @@
     ]
   },
   {
-    "name": "BLS Wallet",
-    "image": "bls.svg",
-    "description": "Reduce transaction costs on evm-L2s using BLS signatures. The smart contract wallet also includes: recovery, multi-action, gas-less transactions, and upgradability.",
+    "name": "WAX",
+    "image": "wax.png",
+    "description": "Formerly BLS Wallet. Reduce transaction costs on evm-L2s using BLS signatures. The smart contract wallet also includes: recovery, multi-action, gas-less transactions, and upgradability. Expanding verification options via 4337 compatibility.",
     "links": [
       {
-        "website": "https://blswallet.org/"
+        "website": "https://getwax.org/"
       },
       {
         "github": "https://github.com/web3well/bls-wallet"
