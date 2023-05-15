@@ -1,6 +1,10 @@
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
   \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css (1) ***!
+  \*********************************************************************/
 :root {
   --light-purple: rgb(195, 181, 250);
   --purple: #cfc4fb;
@@ -15,6 +19,7 @@
   --white: #fcfcfc;
   --box-shadow: -5px 3px 0px var(--gray);
   --black: #151616;
+  --iceberg-200: #A7E8DC;
 
   --twitter: #1da1f2;
   --telegram: #0088cc;
@@ -24,7 +29,7 @@
   --discord: #7289da;
   --website: var(--green);
 
-  --background: #f3f0fe;
+  --background: #F2FBF9;
   --text-color: #151616;
   --border-color: var(--text-color);
   --border-radius: 4px;
@@ -42,7 +47,7 @@ body {
   text-rendering: optimizeLegibility;
   background-color: var(--background);
   background-attachment: fixed;
-  font-family: "Inter", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;;
 }
 
 h1,
@@ -836,7 +841,7 @@ h3 {
   border: 2px solid var(--black);
   border-left: none;
   border-right: none;
-  background-color: var(--purple);
+  background-color: var(--iceberg-200);
 }
 
 /* .discord-text {
