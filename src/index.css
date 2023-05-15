@@ -12,6 +12,7 @@
   --white: #fcfcfc;
   --box-shadow: -5px 3px 0px var(--gray);
   --black: #151616;
+  --iceberg-200: #A7E8DC;
 
   --twitter: #1da1f2;
   --telegram: #0088cc;
@@ -21,7 +22,7 @@
   --discord: #7289da;
   --website: var(--green);
 
-  --background: #f3f0fe;
+  --background: #F2FBF9;
   --text-color: #151616;
   --border-color: var(--text-color);
   --border-radius: 4px;
@@ -29,6 +30,7 @@
   --link-bold: #854ad1;
   --padding: 10px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 body {
   color: var(--black);
@@ -39,7 +41,7 @@ body {
   text-rendering: optimizeLegibility;
   background-color: var(--background);
   background-attachment: fixed;
-  font-family: "Inter", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;;
 }
 
 h1,

@@ -1,5 +1,5 @@
 import downArrow from "../images/arrow-down.svg";
-import triangleGraphic from "../images/triangle-gfc.svg";
+import triangleGraphic from "../images/pse-badge.svg";
 import lockGraphic from "../images/lock-gfc.svg";
 import "./Hero.css";
 
@@ -10,6 +10,10 @@ const Hero = () => (
       <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:leading-[110%] font-bold">
         Enhancing Ethereum through cryptographic research.
       </h1>
+      <h3 className="text-xl lg:text-3xl xl:text-4xl lg:leading-[145%] xl:leading-[150%] font-semibold md:max-w-xl xl:max-w-2xl ">
+          We explore new use cases for zero-knowledge proofs and other cryptographic primitives through research and
+          proof-of-concepts.
+        </h3>
       <a href="#Projects">
         <div className="flex space-x-2">
           <div className="font-semibold underline text-purple-800 active:text-opacity-70 transition-all lg:text-lg">
@@ -26,7 +30,7 @@ const Hero = () => (
         <img className="hero-graphic" src={triangleGraphic} />
       </div>
       {/* Lock */}
-      <div className="md:w-1/4 bg-yellow-400">
+      {/* <div className="md:w-1/4 bg-yellow-400">
         <div className="w-auto h-[91px] lg:w-[177.08px] lg:h-[173px] relative right-1/3 md:-right-2/4 xl:-right-3/4 top-6 md:top-12 lg:top-16 xl:top-32 hover:animate-bounce">
           <img className="hero-graphic" src={lockGraphic} />
         </div>
@@ -36,7 +40,7 @@ const Hero = () => (
           We explore new use cases for zero-knowledge proofs and other cryptographic primitives through research and
           proof-of-concepts.
         </h3>
-      </div>
+      </div> */}
     </div>
   </div>
 );
