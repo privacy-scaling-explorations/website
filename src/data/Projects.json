@@ -226,5 +226,22 @@
         "github": "https://github.com/privacy-scaling-explorations/zk-groups"
       }
     ]
+  },
+  {
+    "name": "Channel 4",
+    "short_name": "Channel 4",
+    "description": "Discover the unexpected with State Channel.",
+    "image": "channel4.svg",
+    "links": [
+      {
+        "website": "https://channel4.wtf//"
+      },
+      {
+        "github": "https://github.com/State-Channel-4"
+      },
+      {
+        "discord": "https://discord.gg/76UrYgVyEx"
+      }
+    ]
   }
 ]
