@@ -10,10 +10,9 @@ on:
   workflow_dispatch:
 
 
-
 jobs:
   build-and-deploy-dev:
-    permissions: 
+    permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -29,8 +28,7 @@ jobs:
           npm run prerender
 
       - name: Deploy to gh-pages-dev branch
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages-dev
           folder: build
