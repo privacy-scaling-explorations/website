@@ -20,22 +20,20 @@ function Navbar() {
         </a>
         <div id="anchor-links" className="nav-links">
           <a href={config.links.docs}>Docs</a>
-          <a href="#Pagesigner">PageSigner</a>
           <a href="#About">About</a>
         </div>
         <div id="social-links" className="nav-links">
-            <a href={config.links.discord} aria-label="TLSNotary Discord link" target="_blank" rel="noopener noreferrer">
-              <img src={discord} alt="TLSNotary Discord" />
-            </a>
-            <a href={config.links.repo} aria-label="TLSNotary Github Repo">
-              <img src={github} alt="Github" />
-            </a>
+          <a href={config.links.discord} aria-label="TLSNotary Discord link" target="_blank" rel="noopener noreferrer">
+            <img src={discord} alt="TLSNotary Discord" />
+          </a>
+          <a href={config.links.repo} aria-label="TLSNotary Github Repo">
+            <img src={github} alt="Github" />
+          </a>
         </div>
         <div id="menu-link" onClick={() => { toggleMenu() }}>{isOpen ? 'Close' : 'Menu'}</div>
       </nav>
       <nav id="nav-menu-mobile" aria-label="Navigation for Mobile" className={isOpen ? 'menu-open' : 'menu-closed'}>
         <a href={config.links.docs}>Docs</a>
-        <a href="#Pagesigner">PageSigner</a>
         <a href="#About">About</a>
       </nav>
     </nav>
