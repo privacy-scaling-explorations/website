@@ -35,8 +35,6 @@
   --padding: 10px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 body {
   color: var(--blue);
   margin: 0 auto;
@@ -46,8 +44,7 @@ body {
   text-rendering: optimizeLegibility;
   background-color: var(--background);
   background-attachment: fixed;
-  font-family: 'Space Grotesk', sans-serif;
-  ;
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -107,4 +104,5 @@ html {
   Responsiveness
 */
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+}
