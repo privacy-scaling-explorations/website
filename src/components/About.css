@@ -1,0 +1,13 @@
+#About {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+}
+
+#About .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 600px;
+}

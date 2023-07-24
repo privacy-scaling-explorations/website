@@ -1,7 +1,8 @@
 {
-  "name": "pse-landingpage",
+  "name": "tlsn-landingpage",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tlsnotary.github.io/landing-page",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-react": "^7.17.12",
