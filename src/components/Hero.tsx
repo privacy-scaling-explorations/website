@@ -1,5 +1,6 @@
 import github from "../images/github.svg";
 import docs from "../images/docs.svg";
+import rust from "../images/rust-logo-blk.svg";
 import "./Hero.css";
 import config from "../config.json";
 
@@ -20,6 +21,14 @@ const Hero = () => (
           <button className="pill-button">
             Documentation
             <img className="button-docs" src={docs} alt="docs"></img>
+          </button>
+        </a>
+      </div>
+      <div className="api-docs-link">
+        <a href={config.links.api}>
+          <button className="pill-button">
+            API
+            <img className="button-docs" src={rust} alt="api docs"></img>
           </button>
         </a>
       </div>

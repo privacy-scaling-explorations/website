@@ -20,6 +20,7 @@ function Navbar() {
         </a>
         <div id="anchor-links" className="nav-links">
           <a href={config.links.docs}>Docs</a>
+          <a href={config.links.api}>API</a>
           <a href="#About">About</a>
         </div>
         <div id="social-links" className="nav-links">
